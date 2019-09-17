@@ -259,7 +259,7 @@ nav#main-nav ul ul ul ul li a { padding-left:40px; }
 /* grid */
 #hd-contents { 
 	display: grid;
-	grid-template-columns: 272px auto 330px;
+	grid-template-columns: minmax(270px, auto) 1fr 330px;
 	grid-template-rows: 1fr 1fr;
 }
 header .logo { 
@@ -297,6 +297,10 @@ nav#main-nav {
 .fix-nav nav#main-nav {
 	grid-row: 2/3;
 }
+@media screen and (max-width: 1200px) {
+	header .logo img { height: 80px; }
+	#hd-btns span:nth-child(2) { display: none; }
+}
 
 /* PAGES */
 #page-title {  }
@@ -333,21 +337,33 @@ nav#main-nav {
 /* FOOTER */
 footer { line-height: 1; position: relative; background-color: #2b2015; color:white; text-align: center; }
 
-.fo-title { display: block; color: rgb(182, 207, 90); font-weight: 700; font-size:24px; }
+.fo-title { display: block; color: rgb(182, 207, 90); font-weight: 700; font-size:24px; margin-bottom: 10px; }
 
 #fo-contents { max-width: 1200px; margin:0 auto; justify-content: space-around; padding:60px 0; }
 #fo-contents a:hover { text-decoration: none;  }
+
+#fo-left { display: flex; flex-flow: column; justify-content: space-between; }
 #fo-right { flex:100%; max-width: 750px; }
+
 #fo-map { max-width: 450px; flex:100%; }
-#fo-info { font-size:14px; justify-content: space-between; flex-flow:row; }
-#fo-info .phone { display: block; font-size:24px; font-weight: 800; color:white; }
-#fo-info address { display: block; line-height: 1; }
+#fo-info { font-size:14px; justify-content: space-between; flex-flow:row; margin-bottom: 40px; }
+#fo-info .phone { display: block; font-size:24px; font-weight: 800; color:white; margin:20px 0; }
+#fo-info a:hover { color: rgb(182, 207, 90); }
+#fo-info address { display: block; line-height: 1.4; }
 #fo-info address span { display: block; }
 #fo-info address a { color:white; }
+
+footer .hours { line-height: 2; margin-top: 20px; }
+footer .hours .fo-title { display: none; }
 
 footer .forms textarea,
 footer .forms input {
 	border-radius: 10px;
+	font-size:14px;
+	text-transform: uppercase;
+	font-weight:700;
+	text-transform: uppercase;
+	letter-spacing: .1em; 
 	background-color: rgba(238, 236, 224,.25);
 }
 footer .forms textarea { min-width: 66%; margin-bottom: 0px; }
