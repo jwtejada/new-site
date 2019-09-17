@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />				
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="$var(metaDescription)$" name="Description" />		
+	<title>$var(pageTitle)$</title>
+	<link rel="canonical" href="http://www.$var(siteURL)$/$var(pageURL)$.html" />	
+	<link href="styles.css" type="text/css" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700,800&display=swap" rel="stylesheet"> 
+	<link href="https://tntwebsites.com/tnticons/css/fontello.css" type="text/css" rel="stylesheet">		
+	<!--[if lt IE 9]><script src="assets/js/html5shiv.min.js"></script><![endif]-->		
+	<link rel="apple-touch-icon" alt="Favicon 144x144" sizes="144x144" href="assets/images/apple-touch-icon-144.png"/>
+	<link rel="apple-touch-icon" alt="Favicon 114x114" sizes="114x114" href="assets/images/apple-touch-icon-114.png"/>
+	<link rel="apple-touch-icon" alt="Favicon 72x72" sizes="72x72" href="assets/images/apple-touch-icon-72.png"/>
+	<link rel="apple-touch-icon" alt="Favicon 57x57" href="assets/images/apple-touch-icon-57.png"/>
+	<link rel="icon" alt="Favicon" href="assets/images/favicon.png"/>			
+	<meta name="apple-mobile-web-app-title" content="" />
+</head>
+	<body class="page_$var(pageURL)$">
+		<div id="fixed-tabs">
+			<a href="request-an-appointment.html" class="ra">
+				<span><i class="icon-calendar-1"></i> <b>Request</b></span>
+				<span>Request an Appointment</span>
+			</a>			
+			<a href="" class="fm">
+				<span><i class="icon-doc-text"></i> <b>Forms</b></span>
+				<span>Complete Our Forms</span>
+			</a>
+			<a href="" target="_blank" class="fb">
+				<span><i class="icon-facebook"></i> <b>Find Us</b></span>
+				<span>Like Us on Facebook</span>
+			</a>
+			<a href="" target="_blank" class="gp">
+				<span><i class="icon-gplus"></i> <b>Reviews</b></span>
+				<span>Leave a Google Review</span>
+			</a>
+			<a class="call" href="tel:14408855354"><i class="icon-phone"></i> <b>Call</b></a>
+			<a class="map" href="" target="_blank"><i class="icon-map"></i> <b>Map</b></a>
+		</div>
+		<header>
+			<div id="hd-top"><a href="">Dental Emergencies Welcome</a> <i>•</i> <a href="">Accepting New Patients</a></div>
+			<div id="hd-contents" class="flex-ed">				
+				<a href="index.html" class="logo"><img src="assets/images/logo.png" /></a>				
+				<nav id="main-nav">
+					<!-- [cms:buildnav start=null levels=*][level]<ul>[item]<li><a href="$pageURL$" title="$hrefTitle$">$pageName$</a></li>[/item]</ul>[/level][/cms:buildnav] -->
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="">Our Services</a>
+							<ul><li><a href="">Cosmetic</a></li>
+							<li><a href="">Restorative</a></li>
+							<li><a href="">Preventive</a></li></ul>
+						</li>
+						<li><a href="">For Patients</a></li>
+						<li><a href="">Dental Insurance</a></li>
+						<li><a href="">Reviews</a></li>
+						<li><a href="">Contact Us</a></li>
+					</ul>
+				</nav>
+				<div id="hd-info">
+					<address><a href="" target="_blank">6363 York Rd #203, <span>Parma Heights, OH 44130</span></a></address>					
+					<a href="tel:14408855354" class="phone">(440) 885-5354</a>								
+				</div>
+				<div id="hd-btns">
+					<span>
+						<a href="" class="btn-ra"><i class="icon-localmed"></i> Book an <small>Appointment</small></a>
+					</span>
+					<span>
+					<a href="" class="btn-rp"><i class="icon-ok-1"></i> Promotions</a>
+					<a href="" class="btn-fm"><i class="icon-pencil"></i> Patient Forms</a>
+					</span>
+				</div>
+			</div>						
+		</header>
+		
+		<main id="page">	
+			<div id="page-title"></div>
+			<article class="clearfix container"><!-- $section(body)$ -->
+				<h1>Dental Implants – Parma Heights, OH</h1>
+					<h2 id="append">Next-Level Tooth Replacement</h2>	
+				<div id="intro">
+					<p><img src="assets/images/intro-img.jpg" class="elem-right" /></p>				
+					<div>					
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+					laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+					</div>			
+				</div>
+
+				<h3>Bulleted List</h3>
+				<ul>
+					<li>Check-ups &amp; Cleanings</li>
+					<li>Dental Sealants</li>
+					<li>Therapy for Bruxism/TMJ</li>
+					<li>Sportsguards</li>
+				</ul>
+
+				<h1>Request an Appointment</h1>
+				<form action="https://tnt-adder.herokuapp.com/submit/" class="forms" method="post">				
+				<div class="inline">
+					<div><label>Name</label> <input name="Name" placeholder="John Smith" required="true" type="text" /></div>
+					<div><label>Phone Number</label> <input name="Phone" placeholder="(555)-555-5555" type="text" /></div>
+					<div><label>Email Address</label> <input name="email" placeholder="john@smith.com" required="true" type="email" /></div>
+				</div>
+				<div class="inline inline-box">
+					<div>
+						<label>Are you...</label> 
+						<span><input name="PatientType[]" value="New" type="checkbox" /> A New Patient </span>
+						<span><input name="PatientType[]" value="Existing" type="checkbox" /> An Existing Patient</span>
+					</div>				
+					<div>
+						<label>Preferred day of the week</label>
+						<span><input name="day[]" value="Monday" type="checkbox" /> Monday </span>
+						<span><input name="day[]" value="Tuesday" type="checkbox" /> Tuesday </span>
+						<span><input name="day[]" value="Wednesday" type="checkbox" /> Wednesday </span>
+						<span><input name="day[]" value="Thursday" type="checkbox" /> Thursday </span>
+						<span><input name="day[]" value="Friday" type="checkbox" /> Friday</span>
+					</div>
+					<div>
+						<label>Preferred time of the day</label> 
+						<span><input name="time[]" value="Morning" type="checkbox" /> Morning </span>
+						<span><input name="time[]" value="Afternoon" type="checkbox" /> Afternoon </span>
+					</div>
+				</div>				
+				<div class="inline">
+					<div>
+						<label>How did you hear about us?</label> 
+						<select name="discover"><option>Search Engine</option><option>Family/Friend</option><option>Promotion</option><option>Social Media</option><option>Other</option></select>
+					</div>			
+					<div><button class="btn">Send</button></div>
+				</div>	
+				<input name="_subject" value="Appointment Request" type="hidden" /><input name="_redirect" value="thanks.html" type="hidden" />
+				</form>		
+
+				<h1>Services</h1>
+				<div class="page-services">
+					<div>
+						<p><a href="">Service 1</a></p>
+						<ul>
+							<li><a href="">Service 2</a></li>
+							<li><a href="">Service 3</a></li>
+							<li><a href="">Service 4</a></li>
+						</ul>
+					</div>
+					<div>
+						<p><a href="">Service 2</a></p>
+						<ul>
+							<li><a href="">Service 2</a></li>
+							<li><a href="">Service 3</a></li>
+							<li><a href="">Service 4</a></li>
+						</ul>
+					</div>
+					<div>
+						<p><a href="">Service 3</a></p>
+						<ul>
+							<li><a href="">Service 2</a></li>
+							<li><a href="">Service 3</a></li>
+							<li><a href="">Service 4</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<h2>Office Tour</h2>				
+				<div id="controls" class="tour-controls flex-ed"></div>
+				<div class="tour slick-slider">
+					<div><img src="assets/_images/officetour-1.jpg" /></div>
+					<div><img src="assets/_images/officetour-2.jpg" /></div>
+					<div><img src="assets/_images/officetour-3.jpg" /></div>
+				</div>
+				
+				<h1>Frequently Asked Questions</h1>
+				<div class="accordion">
+				<h3>
+				How often should I visit the dentist?</h3>
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quas fuga commodi beatae minima maxime ex odio magni quibusdam quisquam dignissimos nihil dolorum, a sapiente sunt ea excepturi alias deserunt.</p>
+				<h3>
+				What is periodontal disease?</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque pariatur placeat repudiandae fuga officiis distinctio dolorum amet, magnam possimus eius tempora et. Quasi dolore commodi similique non. Porro sed, maiores.</p>
+				<h3>
+				Can you help if I have a dental emergency?</h3>
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est asperiores magni id obcaecati eveniet eos voluptates ratione a quas vitae eum, dignissimos et earum, quos laboriosam rem, neque debitis molestias.</p>
+				</div>
+
+				<h1>PAGE DIVIDER + WHY</h1>
+				
+				<div class="why">
+				<h2>Why Choose Section</h2>
+				<ul>
+					<li>Box 1</li>
+					<li>Box 2</li>
+					<li>Box 3</li>
+				</ul>
+				</div>
+
+				<div class="page-divider">
+					<p>
+						<a name="veneers"></a></p>					
+					<h2>
+						Porcelain Veneers</h2>
+					<p>
+						<img class="elem-left" src="assets/_images/preventive-2.jpg" /></p>	
+					<p>
+						If you have chipped or cracked teeth, we&rsquo;ll be happy to cover them up with porcelain veneers! These thin shells of ceramic are tooth-shaped and are used to conceal damaged teeth and create the appearance of a beautiful, unaltered smile. This cosmetic dentistry solution.</p>		
+					<p>
+						<a name="metalfree"></a></p>
+								
+					<h2>
+						Metal-Free Restorations</h2>
+					<p>
+						<img class="elem-right" src="assets/_images/preventive-3.jpg" /></p>	
+					<p>
+						While most patients think of crowns, bridges, and other more advanced restoration solutions as purely restorative dentistry services, we can also use these restorations to improve cosmetic flaws like severe, deep-set staining, malformation, or not uniform tooth size. Our team uses the strong, tooth-colored Bruxir zirconia material to create dental crowns for many cosmetic and restorative treatments. These metal-free restorations combine the benefits of strong gold crowns and natural looking porcelain crowns. They have strength almost equal to gold crowns and a natural appearance that is comparable to porcelain.</p>
+					<p>
+						Additionally, Bruxir zirconia does not create excessive wear when meeting opposing teeth, those on the opposite arch. In addition to the improved cosmetic appearance, we also recommend Bruxir restorations for patients who have allergies or sensitivities to metal. These metal-free restorations offer safe, effective, long-lasting repair for these patients. From concealing and correcting cosmetic flaws to advanced dental restoration, Bruxir crowns allow our team to provide the best possible care to every patient we treat.</p>								
+				</div>	
+
+				<h2>Special</h2>
+				<p class="special-btn">
+					<a href=""><img src="assets/images/checkup-special.jpg" /></a>
+				</p>							
+				
+				<div class="more-to-explore">			
+					<span>More to Explore</span>
+					<p>
+					<a href="#" class="btn">Button 1</a>				
+					<a href="#" class="btn">Button 2</a>
+					<a href="#" class="btn">Button 3</a>				
+					<a href="#" class="btn">Button 4</a>
+					<a href="#" class="btn-alt">Button 5</a>	
+					</p>
+				</div>
+			</article>
+		</main>		
+
+		<!-- $section(above-footer)$ -->
+		<footer>			
+			<div id="fo-contents" class="flex-ed"> 
+				<div id="fo-left">					
+					<a href="index.html" class="logo"><img src="assets/images/logo.png" /></a>
+					<span class="social">
+						<span class="fo-title">Get Social with Us</span>
+						<a href="" target="_blank" class="fb"><i class="icon-facebook"></i></a>
+						<a href="" target="_blank" class="gp"><i class="icon-gplus"></i></a>			
+						<a href="" target="_blank" class="tw"><i class="icon-yelp"></i></a>
+					</span>
+					<div id="copy">&copy;2019 Advanced Dental Center |  <a href="sitemap.html">Sitemap</a> | <a href="policy.html">Privacy Policy</a>  <span> Site designed and maintained by <a href="https://www.tntdental.com/" target="_blank" title="Dental Website Design">TNT Dental</a></span>							
+					</div>	
+				</div>
+				<div id="fo-right">
+					<div id="fo-info" class="flex-ed">
+						<div>
+							<span class="fo-title">Contact Us</span>
+							<address><a href="" target="_blank">6363 York Rd #203, <span>Parma Heights, OH 44130</span></a></address>						
+							<a href="tel:" class="phone">(440) 885-5354</a>										
+							<span class="hours">
+								<span class="fo-title">Office Hours</span>					
+								<b>Monday</b> 8:30 am - 5:30 pm<br />
+								<b>Tuesday</b> 8:30 am - 5:30 pm<br />
+								<b>Wednesday</b> 8:30 am - 5:30 pm<br />
+								<b>Thursday</b> 8:30 am - 5:30 pm<br />
+								<b>Friday</b> 9:00 am - 2:30 pm
+							</span>					
+						</div>
+						<div id="fo-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1496.6808208336097!2d-81.76291170665074!3d41.38795199183586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830eeb484b9db11%3A0x96072faf7a230c30!2sAdvanced+Dental+Center!5e0!3m2!1sen!2sus!4v1563486371626!5m2!1sen!2sus" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<form action="https://tnt-adder.herokuapp.com/submit/" class="forms" method="post">
+						<span class="fo-title">Ask Us a Question</span></span>
+						<div class="inline">
+							<input name="Name" placeholder="Name" required="true" type="text" />			
+							<input name="Phone" placeholder="Phone Number" type="text" />
+							<input name="email" placeholder="Email Address" required="true" type="email" />
+						</div>
+						<div class="inline">
+							<textarea name="question" class="fields" placeholder="Questions/Comments"></textarea>	
+							<button class="btn">Submit</button>
+						</div>					
+						<input name="_subject" value="Ask the Doctor" type="hidden" />
+						<input name="_redirect" value="thanks.html" type="hidden" />
+					</form>					
+				</div>		
+			</div>						
+		</footer>
+	
+	<script src="assets/js/foundation.js"></script>	
+	<script src="assets/js/scripts.js"></script>
+
+</body>
+</html>
