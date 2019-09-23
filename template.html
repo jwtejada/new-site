@@ -6,8 +6,9 @@
 	<meta content="$var(metaDescription)$" name="Description" />		
 	<title>$var(pageTitle)$</title>
 	<link rel="canonical" href="http://www.$var(siteURL)$/$var(pageURL)$.html" />	
-	<link href="styles.css" type="text/css" rel="stylesheet">	
-	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700,800&display=swap" rel="stylesheet"> 
+	<link href="styles.css" type="text/css" rel="stylesheet">
+	
+	<link href="https://tnt-dental.github.io/tnt-extra-icons/css/fontello.css" type="text/css" rel="stylesheet">
 	<link href="https://tntwebsites.com/tnticons/css/fontello.css" type="text/css" rel="stylesheet">		
 	<!--[if lt IE 9]><script src="assets/js/html5shiv.min.js"></script><![endif]-->		
 	<link rel="apple-touch-icon" alt="Favicon 144x144" sizes="144x144" href="assets/images/apple-touch-icon-144.png"/>
@@ -20,8 +21,8 @@
 	<body class="page_$var(pageURL)$">
 		<div id="fixed-tabs">
 			<a href="request-an-appointment.html" class="ra">
-				<span><i class="icon-localmed"></i> <b>Book</b></span>
-				<span>Book an Appointment</span>
+				<span><i class="icon-calendar-1"></i> <b>Request</b></span>
+				<span>Request an Appointment</span>
 			</a>			
 			<a href="" class="fm">
 				<span><i class="icon-doc-text"></i> <b>Forms</b></span>
@@ -35,14 +36,24 @@
 				<span><i class="icon-gplus"></i> <b>Reviews</b></span>
 				<span>Leave a Google Review</span>
 			</a>
-			<a class="call" href="tel:14408855354"><i class="icon-phone"></i> <b>Call</b></a>
+			<a class="call" href="tel:"><i class="icon-phone"></i> <b>Call</b></a>
 			<a class="map" href="" target="_blank"><i class="icon-map"></i> <b>Map</b></a>
 		</div>
 		<header>
-			<div id="hd-top"><a href="">Dental Emergencies Welcome</a> <i>•</i> <a href="">Accepting New Patients</a></div>
+			<div id="hd-top">Open 7 AM to 7 PM • Saturday Appointments • Dental Emergencies Welcome</div>
 			<div id="hd-contents" class="flex-ed">				
-				<a href="index.html" class="logo"><img src="assets/images/logo.png" /></a>				
-				<nav id="main-nav">
+				<a href="index.html" class="logo"><!-- <img src="assets/images/logo.png" />--> Logo</a>				
+				<div id="hd-info">
+					<address><a href="" target="_blank">123 Avenue Ln <span>State, Zip</span></a></address>					
+					<a href="tel:" class="phone">(000) 000-0000</a>								
+				</div>
+				<div id="hd-btns">
+					<a href="" class="btn-ra">Request an Appointment</a>
+					<a href="" class="btn-rp">Refer a patient</a>
+					<a href="" class="btn-fm">Forms</a>
+				</div>
+			</div>			
+			<nav id="main-nav">
 					<!-- [cms:buildnav start=null levels=*][level]<ul>[item]<li><a href="$pageURL$" title="$hrefTitle$">$pageName$</a></li>[/item]</ul>[/level][/cms:buildnav] -->
 					<ul>
 						<li><a href="">Home</a></li>
@@ -53,43 +64,44 @@
 							<li><a href="">Preventive</a></li></ul>
 						</li>
 						<li><a href="">For Patients</a></li>
-						<li><a href="">Dental Insurance</a></li>
 						<li><a href="">Reviews</a></li>
 						<li><a href="">Contact Us</a></li>
 					</ul>
 				</nav>
-				<div id="hd-info">
-					<address><a href="" target="_blank">6363 York Rd #203, <span>Parma Heights, OH 44130</span></a></address>					
-					<a href="tel:14408855354" class="phone">(440) 885-5354</a>								
-				</div>
-				<div id="hd-btns">
-					<span>
-						<a href="" class="btn-ra"><i class="icon-localmed"></i> Book an <small>Appointment</small></a>
-					</span>
-					<span>
-					<a href="" class="btn-rp"><i class="icon-ok-1"></i> Promotions</a>
-					<a href="" class="btn-fm"><i class="icon-pencil"></i> Patient Forms</a>
-					</span>
-				</div>
-			</div>						
 		</header>
 		
 		<main id="page">	
 			<div id="page-title"></div>
 			<article class="clearfix container"><!-- $section(body)$ -->
-				<h1>Dental Implants – Parma Heights, OH</h1>
-				<h2 id="append">Meet Dr. Glenn Shtarkman</h2>	
-				<div id="intro">
-					<p><img src="assets/images/intro-img.jpg" class="elem-right intro-img" /></p>				
-					<div>					
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-					laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, assumenda eaque, iusto inventore consequatur excepturi aut dolor labore non cumque iure provident doloremque, culpa eos aspernatur laborum magnam consequuntur ullam.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptatibus illum, a, dolorum porro nisi temporibus suscipit architecto culpa alias cumque illo praesentium sed necessitatibus nam at voluptas perspiciatis. Aliquam!</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, assumenda eaque, iusto inventore consequatur excepturi aut dolor labore non cumque iure provident doloremque, culpa eos aspernatur laborum magnam consequuntur ullam.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptatibus illum, a, dolorum porro nisi temporibus suscipit architecto culpa alias cumque illo praesentium sed necessitatibus nam at voluptas perspiciatis. Aliquam!</p>
-					</div>			
-				</div>
+				<h1>Header 1</h1>
+				<h2 id="append">Header 2 with Append</h2>				
+				<h2>Header 2</h2>
+				<h3>Header 3</h3>
+				<h4>Header 4</h4>				
+				<hr />
+
+				<div class="clearfix">				
+				<h2>Dr. Brian L. Eck</h2>							
+				<p><img src="assets/_images/about-dr.jpg" class="elem-left" /></p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+				laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				</div>			
+				
+				<h1>Docs Landing</h1>				
+				<div id="drs-landing" class="flex-ed">
+					<a href="">
+						<figure><img src="assets/_images/about-dr.jpg" /></figure>
+						<span class="btn">Doc 1</span>	
+					</a>
+					<a href="">
+						<figure><img src="assets/_images/about-dr.jpg" /></figure>
+						<span class="btn">Doc 2</span>
+					</a>
+					<a href="">
+						<figure><img src="assets/_images/about-dr.jpg" /></figure>
+						<span class="btn">Doc 2</span>
+					</a>
+				</div>	
 
 				<h3>Bulleted List</h3>
 				<ul>
@@ -134,58 +146,104 @@
 					<div><button class="btn">Send</button></div>
 				</div>	
 				<input name="_subject" value="Appointment Request" type="hidden" /><input name="_redirect" value="thanks.html" type="hidden" />
-				</form>		
+				</form>
+
+				<h1>Request Appointment #2</h1>
+
+				 <form action="https://tnt-adder.herokuapp.com/submit/08ecd54d-912a-45a0-95d4-e71f8ff92f22" class="styled-form" method="post">
+					<div class="drei">
+					<span class="input-content">
+					      <input class="input__field" name="Name" type="text" required="true"/>
+					      <label class="input__label"><span class="input__label-content">Full Name </span></label>
+					</span>
+					<span class="input-content">
+					      <input class="input__field" name="Phone" type="text" pattern="(.){10,}"  required title="10 characters minimum" required="true"/>
+					      <label class="input__label"><span class="input__label-content">Phone Number </span></label>
+					</span>
+					<span class="input-content">
+					      <input class="input__field" name="Email" type="email" required="true"/>
+					      <label class="input__label"><span class="input__label-content">Email Address </span></label>
+					</span>
+					</div>
+					<div class="drei">
+					<div class="inline">
+					  <label>Are you...</label>
+					  <span><input name="PatientType[]" type="checkbox" value="New" /> A New Patient </span>
+					  <span><input name="PatientType[]" type="checkbox" value="Existing" /> An Existing Patient </span>
+					</div>
+					<div class="inline">
+					  <label>Preferred day of the week</label>
+					  <span><input name="day[]" type="checkbox" value="Monday" /> Monday </span>
+					  <span><input name="day[]" type="checkbox" value="Tuesday" /> Tuesday </span>
+					<span><input name="day[]" type="checkbox" value="Wednesday" /> Wednesday</span>
+					  <span><input name="day[]" type="checkbox" value="Thursday" /> Thursday </span>
+					  <span><input name="day[]" type="checkbox" value="Friday" /> Friday </span>
+					<span><input name="day[]" type="checkbox" value="Saturday" /> Saturday</span>
+					  
+					</div>
+					<div class="inline">
+					  <label>Preferred time of the day</label>
+					  <span><input name="time[]" type="checkbox" value="Morning" /> Morning </span>
+					  <span><input name="time[]" type="checkbox" value="Afternoon" /> Afternoon </span>
+					</div>
+					</div>
+					<div class="hear">
+					<label>How did you hear about us?</label>
+					<select name="Discover">
+					  <option value="">Select One</option>
+					  <option>Search Engine</option>
+					  <option>Family/Friend</option>
+					  <option>Promotion</option>
+					  <option>Social Media</option>
+					  <option>Other</option>
+					</select>
+					<!-- <select required aria-required="true" id="Location" name="Location">
+					<option value="">Choose Location</option>
+					<option value="Bergenfield">Bergenfield</option>
+					<option value="Tappan">Tappan</option>
+					</select> -->
+					</div>					
+					<button class="btn-alt">Submit</button>
+					<input name="_subject" type="hidden" value="Request an Appointment-Bergenfield" />
+					<input name="_redirect" type="hidden" value="thanks.html" />
+				</form>
 
 				<h1>Services</h1>
 				<div class="page-services">
 					<div>
-						<figure><img src="assets/images/services-2.jpg" /></figure>
-						<div>
-						<p><a href="">I Need a<br /> Dental Checkup & Cleaning</a></p>
+						<p><a href="">Service 1</a></p>
 						<ul>
 							<li><a href="">Service 2</a></li>
 							<li><a href="">Service 3</a></li>
 							<li><a href="">Service 4</a></li>
 						</ul>
-						</div>
-					</div>
-					<div>						
-						<figure><img src="assets/images/services-3.jpg" /></figure>
-						<div>
-						<p><a href="">I am<br /> Unhappy with My Teeth</a></p>
-						<ul>
-							<li><a href="">Service 2</a></li>
-							<li><a href="">Service 3</a></li>
-							<li><a href="">Service 4</a></li>
-						</ul>
-						</div>
 					</div>
 					<div>
-						<figure><img src="assets/images/services-4.jpg" /></figure>
-						<div>
-						<p><a href="">I am<br /> Missing 1 or More Teeth</a></p>
+						<p><a href="">Service 2</a></p>
 						<ul>
 							<li><a href="">Service 2</a></li>
 							<li><a href="">Service 3</a></li>
 							<li><a href="">Service 4</a></li>
 						</ul>
-						</div>
 					</div>
 					<div>
-						<figure><img src="assets/images/services-4.jpg" /></figure>
-						<div>
-						<p><a href="">I am<br /> Missing 1 or More Teeth</a></p>
+						<p><a href="">Service 3</a></p>
 						<ul>
-							<li><a href="">How to Handle Common Dental Emergencies</a></li>
-							<li><a href="">How to Prevent Dental Emergencies</a></li>
-							<li><a href="">The Cost of Treating Dental Emergencies</a></li>
-							<li><a href="">Root Canal Therapy</a></li>
-							<li><a href="">Tooth Extractions</a></li>
+							<li><a href="">Service 2</a></li>
+							<li><a href="">Service 3</a></li>
+							<li><a href="">Service 4</a></li>
 						</ul>
-						</div>
 					</div>
 				</div>
 
+				<h2>Office Tour</h2>				
+				<div id="controls" class="tour-controls flex-ed"></div>
+				<div class="tour slick-slider">
+					<div><img src="assets/_images/officetour-1.jpg" /></div>
+					<div><img src="assets/_images/officetour-2.jpg" /></div>
+					<div><img src="assets/_images/officetour-3.jpg" /></div>
+				</div>
+				
 				<h1>Frequently Asked Questions</h1>
 				<div class="accordion">
 				<h3>
@@ -204,11 +262,11 @@
 				<h1>PAGE DIVIDER + WHY</h1>
 				
 				<div class="why">
-				<h2>Why Choose Advanced Dental Center for Dental Implants?</h2>
+				<h2>Why Choose Section</h2>
 				<ul>
-					<li>Full-Service Care in One Convenient Location</li>
-					<li>Latest Technology Delivers Beautiful Results Quickly</li>
-					<li>Replace Any Number of Teeth for a Lifetime</li>
+					<li>Box 1</li>
+					<li>Box 2</li>
+					<li>Box 3</li>
 				</ul>
 				</div>
 
@@ -236,54 +294,34 @@
 
 				<h2>Special</h2>
 				<p class="special-btn">
-					<a href="" class="cupon">
-						<span class="desc">
-						<big>FREE</big>
-						<span class="title">Invisalign®<br /> Consultation</span>
-						</span>
-						<img src="assets/images/special-1.jpg" />
-					</a>
-					<a href="" class="cupon">
-						<span class="desc">
-						<big><sup>$</sup>699</big>
-						<span class="title">CEREC®<br /> Same-Day Crown</span>
-						</span>
-						<img src="assets/images/special-2.jpg" />
-					</a>
-					<a href="" class="cupon">
-						<span class="desc alt">
-						<big><sup>$</sup>500<sub>off</sub></big>
-						<span class="title">Single Dental<br /> Implant</span>
-						</span>
-						<img src="assets/images/special-3.jpg" />
-					</a>
-					<a href="" class="cupon">
-						<span class="desc alt">
-						<big><sup>$</sup>59</big>
-						<span class="title">Exam, X-Rays<br /> & Cleaning</span>
-						</span>
-						<img src="assets/images/special-4.jpg" />
-					</a>
-				</p>	
+					<a href=""><img src="assets/images/checkup-special.jpg" /></a>
+				</p>
 
 				<div id="special-form">
-					<span class="cupon">
-						<span class="desc">
-						<big>FREE</big>
-						<span class="title">Invisalign®<br /> Consultation</span>
-						</span>
-						<img src="assets/images/special-1.jpg" />
-					</span>
-					<form action="https://tnt-adder.herokuapp.com/submit/" class="forms" method="post">
-						<input name="Name" placeholder="Name" required="true" type="text" />			
-						<input name="Phone" placeholder="Phone Number" type="text" />
-						<input name="email" placeholder="Email Address" required="true" type="email" />
-						<button class="btn">Submit</button>
-						
-						<input name="_subject" value="Ask the Doctor" type="hidden" />
-						<input name="_redirect" value="thanks.html" type="hidden" />						
-					</form>
-				</div>						
+				<form action="https://tnt-adder.herokuapp.com/submit/" class="forms" method="post">
+					<div class="limited">
+						<small>Limited Time Offer</small>
+						<span>New Patient Special</span></div>
+					<img src="assets/images/special-form.jpg" />
+					<div class="callnow">
+						<a href="tel:1">call now! (615) 302-1414</a>
+						<small>or fill out the form below</small>
+					</div>
+					<div class="fields">
+						<input name="Name" placeholder="Name (Required)" required="true" type="text" />			
+						<input name="Phone" placeholder="Phone (Required)" type="text" />
+						<input name="email" placeholder="Email (Required)" required="true" type="email" />
+					</div>
+					<button class="btn">Schedule an<br /> Appointment Today!</button>
+				
+					<input name="_subject" value="Ask the Doctor" type="hidden" />
+					<input name="_redirect" value="thanks.html" type="hidden" />
+				</form>	
+				<div class="special-info fields">
+					<h3>Special Heading <br /> More About Specials</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fuga cum iste ad consequatur! Corrupti, a? Deserunt aspernatur dolorum dolore officia nostrum magni delectus ab fuga dolor. Ducimus, alias nostrum!</p>
+				</div>
+				</div>				
 				
 				<div class="more-to-explore">			
 					<span>More to Explore</span>
@@ -301,52 +339,47 @@
 		<!-- $section(above-footer)$ -->
 		<footer>			
 			<div id="fo-contents" class="flex-ed"> 
-				<div id="fo-left">					
-					<a href="index.html" class="logo"><img src="assets/images/logo.png" /></a>
-					<span class="social">
-						<span class="fo-title">Get Social with Us</span>
-						<a href="" target="_blank" class="fb"><i class="icon-facebook"></i></a>
-						<a href="" target="_blank" class="gp"><i class="icon-gplus"></i></a>			
-						<a href="" target="_blank" class="tw"><i class="icon-yelp"></i></a>
+				<form action="https://tnt-adder.herokuapp.com/submit/" class="forms" method="post">
+					<span class="fo-h3">Have Questions? <span>Get Answers.</span></span>
+					<input name="Name" placeholder="Name" required="true" type="text" />			
+					<input name="Phone" placeholder="Phone Number" type="text" />
+					<input name="email" placeholder="Email Address" required="true" type="email" />
+					<textarea name="question" class="fields" placeholder="Questions/Comments"></textarea>	
+					<button class="btn">Submit my Question</button>
+					
+					<input name="_subject" value="Ask the Doctor" type="hidden" />
+					<input name="_redirect" value="thanks.html" type="hidden" />
+				</form>
+
+				<div id="fo-info">
+					<a href="tel:" class="phone">(000) 000-0000</a>										
+					<address><a href="" target="_blank">123 Avenue Ln <span>State, Zip</span></a></address>										
+					<span class="hours">
+						<span class="fo-title">Office Hours</span>					
+						<b>Monday</b> 8:00 am - 5:00 pm<br />
+						<b>Tuesday</b> 8:00 am - 5:00 pm<br />
+						<b>Wednesday</b> 8:00 am - 5:00 pm<br />
+						<b>Thursday</b> 8:00 am - 5:00 pm<br />
+						<b>Friday</b> 8:00 am - 5:00 pm
 					</span>
-					<div id="copy">&copy;2019 Advanced Dental Center |  <a href="sitemap.html">Sitemap</a> | <a href="policy.html">Privacy Policy</a>  <span> Site designed and maintained by <a href="https://www.tntdental.com/" target="_blank" title="Dental Website Design">TNT Dental</a></span>							
-					</div>	
+
+					<span class="social">
+						<a href="" target="_blank" class="fb"><i class="icon-facebook"></i></a>
+						<a href="" target="_blank" class="gp"><i class="icon-gplus"></i></a>				
+						<a href="" target="_blank" class="yp"><i class="icon-yelp"></i></a>				
+						<a href="" target="_blank" class="tw"><i class="icon-twitter"></i></a>
+
+					</span>
 				</div>
-				<div id="fo-right">
-					<div id="fo-info" class="flex-ed">
-						<div>
-							<span class="fo-title">Contact Us</span>
-							<address><a href="" target="_blank">6363 York Rd #203, <span>Parma Heights, OH 44130</span></a></address>						
-							<a href="tel:" class="phone">(440) 885-5354</a>										
-							<span class="hours">
-								<span class="fo-title">Office Hours</span>					
-								<b>Monday</b> 8:30 am - 5:30 pm<br />
-								<b>Tuesday</b> 8:30 am - 5:30 pm<br />
-								<b>Wednesday</b> 8:30 am - 5:30 pm<br />
-								<b>Thursday</b> 8:30 am - 5:30 pm<br />
-								<b>Friday</b> 9:00 am - 2:30 pm
-							</span>					
-						</div>
-						<div id="fo-map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1496.6808208336097!2d-81.76291170665074!3d41.38795199183586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830eeb484b9db11%3A0x96072faf7a230c30!2sAdvanced+Dental+Center!5e0!3m2!1sen!2sus!4v1563486371626!5m2!1sen!2sus" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-						</div>
-					</div>
-					<form action="https://tnt-adder.herokuapp.com/submit/" class="forms" method="post">
-						<span class="fo-title">Ask Us a Question</span></span>
-						<div class="inline">
-							<input name="Name" placeholder="Name" required="true" type="text" />			
-							<input name="email" placeholder="Email" required="true" type="email" />
-							<input name="Phone" placeholder="Phone" type="text" />
-						</div>
-						<div class="inline">
-							<textarea name="question" class="fields" placeholder="Questions/Comments"></textarea>	
-							<button class="btn">Submit</button>
-						</div>					
-						<input name="_subject" value="Ask the Doctor" type="hidden" />
-						<input name="_redirect" value="thanks.html" type="hidden" />
-					</form>					
-				</div>		
-			</div>						
+				<nav>
+					<span class="fo-title">Featured Dental Services</span>
+					<ul>
+					
+					</ul>
+				</nav>				
+			</div>			
+			<div id="copy">Copyright&copy;2019  |  <a href="sitemap.html">Sitemap</a> | <a href="policy.html">Privacy Policy</a>  <span><span>|</span> Site designed and maintained by <a href="https://www.tntdental.com/" target="_blank" title="Dental Website Design">TNT Dental</a></span>							
+			</div>
 		</footer>
 	
 	<script src="assets/js/foundation.js"></script>	

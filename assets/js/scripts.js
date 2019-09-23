@@ -313,6 +313,8 @@ $(function () {
             $(".toggle").removeClass("active").next().slideUp();
             $(this).addClass("active").next().slideDown();
             for (var i = 0; i < $('.accordion iframe').length; i++) {
+                var noAutoPlay = $('.accordion iframe').attr('src').replace('autoplay=1','autoplay=0');
+                $ ('.accordion iframe').attr('src', noAutoPlay);
                 //url add: ?enablejsapi=1
                 $('.accordion iframe')[i].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
             }
