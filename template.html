@@ -75,14 +75,8 @@
 			<article class="clearfix container"><!-- $section(body)$ -->
 				<h1>Header 1</h1>
 				<h2 id="append">Header 2 with Append</h2>				
-				<h2>Header 2</h2>
-				<h3>Header 3</h3>
-				<h4>Header 4</h4>				
-				<hr />
 
-				<div class="clearfix">				
-				<h2>Dr. Brian L. Eck</h2>							
-				<p><img src="assets/_images/about-dr.jpg" class="elem-left" /></p>
+				<div class="clearfix">			
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
 				laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 				</div>			
@@ -133,80 +127,33 @@
 						<span><input name="day[]" value="Friday" type="checkbox" /> Friday</span>
 					</div>
 					<div>
-						<label>Preferred time of the day</label> 
-						<span><input name="time[]" value="Morning" type="checkbox" /> Morning </span>
-						<span><input name="time[]" value="Afternoon" type="checkbox" /> Afternoon </span>
+					 	<label>Preferred method of communication</label>
+                        <span><input name="time[]" type="checkbox" required="" value="phone" /> Phone </span>
+                        <span><input name="time[]" type="checkbox" required="" value="Text" /> Text </span>
+                        <span><input name="time[]" type="checkbox" required="" value="email" /> Email </span>
 					</div>
-				</div>				
+				</div>		
+
+				<div class="inline">
+                    <div class="">
+                         <label>What are you interested in?</label>
+                          <textarea name="Interests" aria-label="Interests" placeholder="I am interested in…"></textarea>
+                       </div>
+                    <div class="wide">
+                           <label>Do you have any questions or comments?</label>
+                          <textarea name="Questions/Comments" aria-label="Questions" placeholder="Type your questions or comments here."></textarea>
+                   </div>
+                </div>
+
 				<div class="inline">
 					<div>
 						<label>How did you hear about us?</label> 
 						<select name="discover"><option>Search Engine</option><option>Family/Friend</option><option>Promotion</option><option>Social Media</option><option>Other</option></select>
 					</div>			
-					<div><button class="btn">Send</button></div>
+					<div><button class="btn">Submit</button></div>
 				</div>	
 				<input name="_subject" value="Appointment Request" type="hidden" /><input name="_redirect" value="thanks.html" type="hidden" />
-				</form>
-
-				<h1>Request Appointment #2</h1>
-
-				 <form action="https://tnt-adder.herokuapp.com/submit/08ecd54d-912a-45a0-95d4-e71f8ff92f22" class="styled-form" method="post">
-					<div class="drei">
-					<span class="input-content">
-					      <input class="input__field" name="Name" type="text" required="true"/>
-					      <label class="input__label"><span class="input__label-content">Full Name </span></label>
-					</span>
-					<span class="input-content">
-					      <input class="input__field" name="Phone" type="text" pattern="(.){10,}"  required title="10 characters minimum" required="true"/>
-					      <label class="input__label"><span class="input__label-content">Phone Number </span></label>
-					</span>
-					<span class="input-content">
-					      <input class="input__field" name="Email" type="email" required="true"/>
-					      <label class="input__label"><span class="input__label-content">Email Address </span></label>
-					</span>
-					</div>
-					<div class="drei">
-					<div class="inline">
-					  <label>Are you...</label>
-					  <span><input name="PatientType[]" type="checkbox" value="New" /> A New Patient </span>
-					  <span><input name="PatientType[]" type="checkbox" value="Existing" /> An Existing Patient </span>
-					</div>
-					<div class="inline">
-					  <label>Preferred day of the week</label>
-					  <span><input name="day[]" type="checkbox" value="Monday" /> Monday </span>
-					  <span><input name="day[]" type="checkbox" value="Tuesday" /> Tuesday </span>
-					<span><input name="day[]" type="checkbox" value="Wednesday" /> Wednesday</span>
-					  <span><input name="day[]" type="checkbox" value="Thursday" /> Thursday </span>
-					  <span><input name="day[]" type="checkbox" value="Friday" /> Friday </span>
-					<span><input name="day[]" type="checkbox" value="Saturday" /> Saturday</span>
-					  
-					</div>
-					<div class="inline">
-					  <label>Preferred time of the day</label>
-					  <span><input name="time[]" type="checkbox" value="Morning" /> Morning </span>
-					  <span><input name="time[]" type="checkbox" value="Afternoon" /> Afternoon </span>
-					</div>
-					</div>
-					<div class="hear">
-					<label>How did you hear about us?</label>
-					<select name="Discover">
-					  <option value="">Select One</option>
-					  <option>Search Engine</option>
-					  <option>Family/Friend</option>
-					  <option>Promotion</option>
-					  <option>Social Media</option>
-					  <option>Other</option>
-					</select>
-					<!-- <select required aria-required="true" id="Location" name="Location">
-					<option value="">Choose Location</option>
-					<option value="Bergenfield">Bergenfield</option>
-					<option value="Tappan">Tappan</option>
-					</select> -->
-					</div>					
-					<button class="btn-alt">Submit</button>
-					<input name="_subject" type="hidden" value="Request an Appointment-Bergenfield" />
-					<input name="_redirect" type="hidden" value="thanks.html" />
-				</form>
+				</form>			
 
 				<h1>Services</h1>
 				<div class="page-services">
@@ -294,33 +241,32 @@
 
 				<h2>Special</h2>
 				<p class="special-btn">
-					<a href=""><img src="assets/images/checkup-special.jpg" /></a>
+					<a href="" class="cupon">
+						<span class="desc">
+							<span class="title"></span>
+						</span>
+						<img src="assets/images/checkup-special.jpg" />
+					</a>
 				</p>
 
 				<div id="special-form">
-				<form action="https://tnt-adder.herokuapp.com/submit/" class="forms" method="post">
-					<div class="limited">
-						<small>Limited Time Offer</small>
-						<span>New Patient Special</span></div>
-					<img src="assets/images/special-form.jpg" />
-					<div class="callnow">
-						<a href="tel:1">call now! (615) 302-1414</a>
-						<small>or fill out the form below</small>
-					</div>
-					<div class="fields">
-						<input name="Name" placeholder="Name (Required)" required="true" type="text" />			
-						<input name="Phone" placeholder="Phone (Required)" type="text" />
-						<input name="email" placeholder="Email (Required)" required="true" type="email" />
-					</div>
-					<button class="btn">Schedule an<br /> Appointment Today!</button>
-				
-					<input name="_subject" value="Ask the Doctor" type="hidden" />
-					<input name="_redirect" value="thanks.html" type="hidden" />
-				</form>	
-				<div class="special-info fields">
-					<h3>Special Heading <br /> More About Specials</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fuga cum iste ad consequatur! Corrupti, a? Deserunt aspernatur dolorum dolore officia nostrum magni delectus ab fuga dolor. Ducimus, alias nostrum!</p>
-				</div>
+					<span class="cupon">
+						<span class="desc">
+							<span class="title"></span>
+						</span>
+						<img src="assets/images/checkup-special.jpg" />
+					</span>
+					<form action="https://tnt-adder.herokuapp.com/submit/" class="forms" method="post">					
+						<div class="fields">
+							<input name="Name" placeholder="Name (Required)" required="true" type="text" />			
+							<input name="Phone" placeholder="Phone (Required)" type="text" />
+							<input name="email" placeholder="Email (Required)" required="true" type="email" />
+						</div>
+						<button class="btn">Submit</button>
+					
+						<input name="_subject" value="Special" type="hidden" />
+						<input name="_redirect" value="thanks.html" type="hidden" />
+					</form>	
 				</div>				
 				
 				<div class="more-to-explore">			
