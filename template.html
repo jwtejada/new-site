@@ -5,10 +5,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta content="$var(metaDescription)$" name="Description" />		
 	<title>$var(pageTitle)$</title>
-	<link rel="canonical" href="http://www.$var(siteURL)$/$var(pageURL)$.html" />	
+	<link rel="canonical" href="http://www.$var(siteURL)$/$var(pageURL)$.html" />		
+	<link href="_ui.css" type="text/css" rel="stylesheet">
 	<link href="styles.css" type="text/css" rel="stylesheet">
-	
-	<link href="https://tnt-dental.github.io/tnt-extra-icons/css/fontello.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Literata:400,700|Roboto:300,400,700&display=swap" rel="stylesheet"> 
 	<link href="https://tntwebsites.com/tnticons/css/fontello.css" type="text/css" rel="stylesheet">		
 	<!--[if lt IE 9]><script src="assets/js/html5shiv.min.js"></script><![endif]-->		
 	<link rel="apple-touch-icon" alt="Favicon 144x144" sizes="144x144" href="assets/images/apple-touch-icon-144.png"/>
@@ -40,60 +40,59 @@
 			<a class="map" href="" target="_blank"><i class="icon-map"></i> <b>Map</b></a>
 		</div>
 		<header>
-			<div id="hd-top">Open 7 AM to 7 PM • Saturday Appointments • Dental Emergencies Welcome</div>
 			<div id="hd-contents" class="flex-ed">				
-				<a href="index.html" class="logo"><!-- <img src="assets/images/logo.png" />--> Logo</a>				
-				<div id="hd-info">
-					<address><a href="" target="_blank">123 Avenue Ln <span>State, Zip</span></a></address>					
-					<a href="tel:" class="phone">(000) 000-0000</a>								
+				<a href="index.html" class="logo"><img src="assets/images/logo.png" /><span><img src="assets/images/logo-title.png" /> <span class="tag">Formerly Today's Dental</span></span></a>				
+				<div id="hd-container">
+					<div id="hd-info" class="flex-ed">
+						<address><a href="" target="_blank"><i class="icon-location"></i> 209 W Main St, <span>Azle, TX 76020</span></a></address>					
+						<a href="tel:18174442585" class="phone"><i class="icon-phone"></i> (817) 444-2585</a>								
+					</div>
+					<nav id="main-nav">
+						<!-- [cms:buildnav start=null levels=*][level]<ul>[item]<li><a href="$pageURL$" title="$hrefTitle$">$pageName$</a></li>[/item]</ul>[/level][/cms:buildnav] -->
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">About Us</a></li>
+							<li><a href="">Our Services</a>
+								<ul><li><a href="">Cosmetic</a></li>
+								<li><a href="">Restorative</a></li>
+								<li><a href="">Preventive</a></li></ul>
+							</li>
+							<li><a href="">For Patients</a></li>
+							<li><a href="">Dental Insurance</a></li>
+							<li><a href="">Reviews</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</nav>
 				</div>
-				<div id="hd-btns">
-					<a href="" class="btn-ra">Request an Appointment</a>
-					<a href="" class="btn-rp">Refer a patient</a>
-					<a href="" class="btn-fm">Forms</a>
-				</div>
+				<a href="" class="btn-ra">Request <small>an Appointment</small></a>
 			</div>			
-			<nav id="main-nav">
-					<!-- [cms:buildnav start=null levels=*][level]<ul>[item]<li><a href="$pageURL$" title="$hrefTitle$">$pageName$</a></li>[/item]</ul>[/level][/cms:buildnav] -->
-					<ul>
-						<li><a href="">Home</a></li>
-						<li><a href="">About Us</a></li>
-						<li><a href="">Our Services</a>
-							<ul><li><a href="">Cosmetic</a></li>
-							<li><a href="">Restorative</a></li>
-							<li><a href="">Preventive</a></li></ul>
-						</li>
-						<li><a href="">For Patients</a></li>
-						<li><a href="">Reviews</a></li>
-						<li><a href="">Contact Us</a></li>
-					</ul>
-				</nav>
+			
 		</header>
 		
 		<main id="page">	
 			<div id="page-title"></div>
 			<article class="clearfix container"><!-- $section(body)$ -->
-				<h1>Header 1</h1>
-				<h2 id="append">Header 2 with Append</h2>				
-
-				<div class="clearfix">			
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-				laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				<div id="intro" class="flex-ed">	
+					<figure><img src="assets/images/main-img.jpg" /></figure>
+					<div>
+						<h1>Header 1</h1>
+						<h2 id="append">Header 2 with Append</h2>										
+						<div class="intro-block">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+						laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						</div>
+					</div>
 				</div>			
 				
-				<h1>Docs Landing</h1>				
+				<h2>Docs Landing</h2>				
 				<div id="drs-landing" class="flex-ed">
 					<a href="">
-						<figure><img src="assets/_images/about-dr.jpg" /></figure>
-						<span class="btn">Doc 1</span>	
+						<figure><img src="assets/images/dr-landing-1.jpg" /></figure>
+						<span class="btn">Meet Dr. Frank Rubal</span>	
 					</a>
 					<a href="">
-						<figure><img src="assets/_images/about-dr.jpg" /></figure>
-						<span class="btn">Doc 2</span>
-					</a>
-					<a href="">
-						<figure><img src="assets/_images/about-dr.jpg" /></figure>
-						<span class="btn">Doc 2</span>
+						<figure><img src="assets/images/dr-landing-2.jpg" /></figure>
+						<span class="btn">Meet Dr. Jodie Rubal</span>
 					</a>
 				</div>	
 
@@ -158,7 +157,15 @@
 				<h1>Services</h1>
 				<div class="page-services">
 					<div>
-						<p><a href="">Service 1</a></p>
+						<p><a href=""><img src="assets/images/services-1.png" /> I Need a<br /> Dental Checkup<br /> & Cleaning</a></p>
+						<ul>
+							<li><a href="">Dental Checkups & Cleanings</a></li>
+							<li><a href="">Oral Cancer Screening</a></li>
+							<li><a href="">Fluoride Treatment</a></li>
+						</ul>
+					</div>
+					<div>
+						<p><a href=""><img src="assets/images/services-1.png" /> Service 2</a></p>
 						<ul>
 							<li><a href="">Service 2</a></li>
 							<li><a href="">Service 3</a></li>
@@ -166,15 +173,7 @@
 						</ul>
 					</div>
 					<div>
-						<p><a href="">Service 2</a></p>
-						<ul>
-							<li><a href="">Service 2</a></li>
-							<li><a href="">Service 3</a></li>
-							<li><a href="">Service 4</a></li>
-						</ul>
-					</div>
-					<div>
-						<p><a href="">Service 3</a></p>
+						<p><a href=""><img src="assets/images/services-1.png" /> Service 3</a></p>
 						<ul>
 							<li><a href="">Service 2</a></li>
 							<li><a href="">Service 3</a></li>
@@ -209,11 +208,11 @@
 				<h1>PAGE DIVIDER + WHY</h1>
 				
 				<div class="why">
-				<h2>Why Choose Section</h2>
+				<h2>Why Choose Rubal Dentistry for Dental Implants?</h2>
 				<ul>
-					<li>Box 1</li>
-					<li>Box 2</li>
-					<li>Box 3</li>
+					<li>Dentists with More Than 20 Years of Experience Each</li>
+					<li>Low-Interest Financing Available</li>
+					<li>Implant Placement Performed In-Office</li>
 				</ul>
 				</div>
 
@@ -237,37 +236,7 @@
 						While most patients think of crowns, bridges, and other more advanced restoration solutions as purely restorative dentistry services, we can also use these restorations to improve cosmetic flaws like severe, deep-set staining, malformation, or not uniform tooth size. Our team uses the strong, tooth-colored Bruxir zirconia material to create dental crowns for many cosmetic and restorative treatments. These metal-free restorations combine the benefits of strong gold crowns and natural looking porcelain crowns. They have strength almost equal to gold crowns and a natural appearance that is comparable to porcelain.</p>
 					<p>
 						Additionally, Bruxir zirconia does not create excessive wear when meeting opposing teeth, those on the opposite arch. In addition to the improved cosmetic appearance, we also recommend Bruxir restorations for patients who have allergies or sensitivities to metal. These metal-free restorations offer safe, effective, long-lasting repair for these patients. From concealing and correcting cosmetic flaws to advanced dental restoration, Bruxir crowns allow our team to provide the best possible care to every patient we treat.</p>								
-				</div>	
-
-				<h2>Special</h2>
-				<p class="special-btn">
-					<a href="" class="cupon">
-						<span class="desc">
-							<span class="title"></span>
-						</span>
-						<img src="assets/images/checkup-special.jpg" />
-					</a>
-				</p>
-
-				<div id="special-form">
-					<span class="cupon">
-						<span class="desc">
-							<span class="title"></span>
-						</span>
-						<img src="assets/images/checkup-special.jpg" />
-					</span>
-					<form action="https://tnt-adder.herokuapp.com/submit/" class="forms" method="post">					
-						<div class="fields">
-							<input name="Name" placeholder="Name (Required)" required="true" type="text" />			
-							<input name="Phone" placeholder="Phone (Required)" type="text" />
-							<input name="email" placeholder="Email (Required)" required="true" type="email" />
-						</div>
-						<button class="btn">Submit</button>
-					
-						<input name="_subject" value="Special" type="hidden" />
-						<input name="_redirect" value="thanks.html" type="hidden" />
-					</form>	
-				</div>				
+				</div>							
 				
 				<div class="more-to-explore">			
 					<span>More to Explore</span>
@@ -283,48 +252,52 @@
 		</main>		
 
 		<!-- $section(above-footer)$ -->
-		<footer>			
-			<div id="fo-contents" class="flex-ed"> 
-				<form action="https://tnt-adder.herokuapp.com/submit/" class="forms" method="post">
-					<span class="fo-h3">Have Questions? <span>Get Answers.</span></span>
+		<div id="contact">	
+			<span class="h2">Have Questions? Get Answers.</span>				
+			<form action="https://tnt-adder.herokuapp.com/submit/" class="forms" method="post">
+				<div class="stretch-ed">
+					<div class="inline stretch-ed">
 					<input name="Name" placeholder="Name" required="true" type="text" />			
 					<input name="Phone" placeholder="Phone Number" type="text" />
 					<input name="email" placeholder="Email Address" required="true" type="email" />
-					<textarea name="question" class="fields" placeholder="Questions/Comments"></textarea>	
-					<button class="btn">Submit my Question</button>
-					
-					<input name="_subject" value="Ask the Doctor" type="hidden" />
-					<input name="_redirect" value="thanks.html" type="hidden" />
-				</form>
-
+				</div>
+				<textarea name="question" class="fields" placeholder="Questions/Comments"></textarea>	
+				</div>
+				<button class="btn">Submit</button>
+				
+				<input name="_subject" value="Ask the Doctor" type="hidden" />
+				<input name="_redirect" value="thanks.html" type="hidden" />
+				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="_check" tabindex="-1" value=""></div>
+			</form>
+		</div>
+		<footer>			
+			<div id="fo-contents" class="flex-ed"> 
 				<div id="fo-info">
-					<a href="tel:" class="phone">(000) 000-0000</a>										
-					<address><a href="" target="_blank">123 Avenue Ln <span>State, Zip</span></a></address>										
+					<a href="" class="logo"><img src="assets/images/logo.png" /><img src="assets/images/logo-title.png" /></a>
+
+					<a href="tel:" class="phone">(817) 444-2585</a>										
+					<address><a href="" target="_blank">209 W Main St, <span>Azle, TX 76020</span></a></address>															
+				</div>
+				<div id="fo-social">
 					<span class="hours">
 						<span class="fo-title">Office Hours</span>					
-						<b>Monday</b> 8:00 am - 5:00 pm<br />
-						<b>Tuesday</b> 8:00 am - 5:00 pm<br />
-						<b>Wednesday</b> 8:00 am - 5:00 pm<br />
-						<b>Thursday</b> 8:00 am - 5:00 pm<br />
-						<b>Friday</b> 8:00 am - 5:00 pm
+						<b>Monday</b> 7:30 am - 5:00 pm<br />
+						<b>Tuesday</b> 7:30 am - 5:00 pm<br />
+						<b>Wednesday</b> 7:30 am - 5:00 pm<br />
+						<b>Thursday</b> 7:30 am - 5:00 pm<br />
+						<b>Friday</b> 8:00 am - 1:00 pm
 					</span>
-
 					<span class="social">
+						<span class="fo-title">Connect With Us</span>
 						<a href="" target="_blank" class="fb"><i class="icon-facebook"></i></a>
-						<a href="" target="_blank" class="gp"><i class="icon-gplus"></i></a>				
-						<a href="" target="_blank" class="yp"><i class="icon-yelp"></i></a>				
-						<a href="" target="_blank" class="tw"><i class="icon-twitter"></i></a>
-
-					</span>
+						<a href="" target="_blank" class="gp"><i class="icon-gplus"></i></a>									
+						<a href="" target="_blank" class="yt"><i class="icon-youtube-play"></i></a>			
+						<a href="" target="_blank" class="tw"><i class="icon-twitter"></i></a>				
+						<a href="" target="_blank" class="yp"><i class="icon-yelp"></i></a>	
+					</span>				
 				</div>
-				<nav>
-					<span class="fo-title">Featured Dental Services</span>
-					<ul>
-					
-					</ul>
-				</nav>				
 			</div>			
-			<div id="copy">Copyright&copy;2019  |  <a href="sitemap.html">Sitemap</a> | <a href="policy.html">Privacy Policy</a>  <span><span>|</span> Site designed and maintained by <a href="https://www.tntdental.com/" target="_blank" title="Dental Website Design">TNT Dental</a></span>							
+			<div id="copy">&copy;2019 Rubal Dentistry | <a href="sitemap.html">Sitemap</a> | <a href="policy.html">Privacy Policy</a>  <span><span>|</span> Site designed and maintained by <a href="https://www.tntdental.com/" target="_blank" title="Dental Website Design">TNT Dental</a></span>							
 			</div>
 		</footer>
 	

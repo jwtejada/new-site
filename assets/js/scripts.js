@@ -22,7 +22,7 @@ $(function () {
         if (theWindow.width() > 1023) {
             $(body).addClass("not-scrolled");    
         }                 
-        $("#page-title").css('padding-top', header.outerHeight());   
+        $("body").css('padding-top', header.outerHeight());   
     }).trigger('resize');    
     theWindow.on("scroll", function () {      
         if (theWindow.width() > 1023) {
@@ -151,6 +151,7 @@ $(function () {
         dots:true,
         arrows:true, 
         fade:true,
+        appendArrows:".reviews-controls",
         appendDots:".reviews-controls",
         prevArrow:'<a href="#" id="prev"><i class="icon-angle-left"></i></a>',
         nextArrow:'<a href="#" id="next"><i class="icon-angle-right"></i></a>',                      
@@ -163,7 +164,6 @@ $(function () {
         {
           breakpoint: 1145,
           settings: {
-            appendArrows:".reviews-controls",
           }
         }]
     }); 
@@ -394,9 +394,9 @@ $(function () {
     // $('footer .forms input').on('invalid', function(e) { e.preventDefault(); });
 
     //WRAP STRINGS
-    $(".why h2:contains('Why Choose Jeffrey Hermen, DDS')").html(function(_, html) {
+    /*$(".why h2:contains('Why Choose Jeffrey Hermen, DDS')").html(function(_, html) {
        return html.replace(/(Why Choose Jeffrey Hermen, DDS)/g, '<span>$1</span>');
-    });
+    });*/
 
     //INSTA FEED
     // if (theWindow.width() > 600 ) {  
@@ -449,7 +449,7 @@ $(function () {
     //PAGE ACTIONS
     if($(".page-divider").length) {
         $(".page-divider").tntdivider({
-            alt:'even',
+            alt:'odd',
             alignBody: true,
             alignTitles: true,
             alignHeight: 400
@@ -464,11 +464,11 @@ $(function () {
         $("#page h1:first-child:not(.detach), #page #append").appendTo("#page-title").wrapAll('<div class="container" />'); 
     }
     //Custom Borders
-    // $("img.elem-left, img.elem-right").each(function() {
-    //     var objClass = $(this).attr('class');    
-    //     $(this).wrapAll('<span class="elem-orbs ' + objClass + '"/>');                    
-    //     $(this).removeClass();
-    // });
+    $("img.elem-left, img.elem-right").each(function() {
+        var objClass = $(this).attr('class');    
+        $(this).wrapAll('<span class="elem-deco ' + objClass + '"/>');                    
+        $(this).removeClass();
+    });
 
     // //page tags
     // var pageTag = $("#page h1").data("tag"),
