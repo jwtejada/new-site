@@ -62,7 +62,9 @@ $(function () {
     $("main .slick-slider").slick({
         dots:true,
         arrows:true,
-        appendDots:"#controls",  
+        slidesToScroll:1,
+        slidesToShow:1,
+        appendDots:"#controls",          
         prevArrow:'<a href="#" id="prev"><i class="icon-angle-left"></i></a>',
         nextArrow:'<a href="#" id="next"><i class="icon-angle-right"></i></a>',                  
         customPaging:function(slider,index) {         
@@ -73,6 +75,45 @@ $(function () {
             breakpoint: 1185,
             settings: {  
                 appendArrows:"#controls"                               
+            } 
+        }]
+    }); 
+
+    $(".slick-welcome").slick({
+        dots:true,
+        arrows:true,
+        slidesToScroll:1,
+        slidesToShow:1,
+        appendDots:".welcome-controls",          
+        prevArrow:'<a href="#" id="prev"><i class="icon-angle-left"></i></a>',
+        nextArrow:'<a href="#" id="next"><i class="icon-angle-right"></i></a>',                  
+        customPaging:function(slider,index) {         
+            return '<span></span>';
+        },
+        responsive: 
+        [{
+            breakpoint: 1185,
+            settings: {  
+                appendArrows:".welcome-controls"                               
+            } 
+        }]
+    }); 
+    $(".slick-team").slick({
+        dots:true,
+        arrows:true,
+        slidesToScroll:1,
+        slidesToShow:1,
+        appendDots:".team-controls",          
+        prevArrow:'<a href="#" id="prev"><i class="icon-angle-left"></i></a>',
+        nextArrow:'<a href="#" id="next"><i class="icon-angle-right"></i></a>',                  
+        customPaging:function(slider,index) {         
+            return '<span></span>';
+        },
+        responsive: 
+        [{
+            breakpoint: 1185,
+            settings: {  
+                appendArrows:".team-controls"                               
             } 
         }]
     }); 
@@ -133,25 +174,26 @@ $(function () {
     //     })
     // }
 
-    // $(".slick-banner").slick({      
-    //     dots:true,   
-    //     arrows:false,  
-    //     appendDots:".banner-controls",
-    //     fade:true,
-    //     draggable:false,
-    //     autoplay:true,
-    //     autoplaySpeed:8000,
-    //     speed:800,
-    //       customPaging:function(slider,index) {         
-    //          return '<span></span>';
-    //    }
-    // });   
+    $(".slick-banner").slick({      
+        dots:true,   
+        arrows:false,  
+        appendDots:".banner-controls",
+        fade:true,
+        draggable:false,
+        autoplay:true,
+        autoplaySpeed:8000,
+        speed:800,
+          customPaging:function(slider,index) {         
+             return '<span></span>';
+       }
+    });   
 
     $(".slick-reviews").slick({   
         dots:true,
         arrows:true, 
         fade:true,
-        appendArrows:".reviews-controls",
+        autoplay:true,
+        autoplaySpeed:5000,
         appendDots:".reviews-controls",
         prevArrow:'<a href="#" id="prev"><i class="icon-angle-left"></i></a>',
         nextArrow:'<a href="#" id="next"><i class="icon-angle-right"></i></a>',                      
@@ -162,8 +204,9 @@ $(function () {
         },
         responsive: [
         {
-          breakpoint: 1145,
+          breakpoint: 1023,
           settings: {
+            appendArrows:".reviews-controls"
           }
         }]
     }); 
@@ -449,26 +492,30 @@ $(function () {
     //PAGE ACTIONS
     if($(".page-divider").length) {
         $(".page-divider").tntdivider({
-            alt:'odd',
+            alt:'even',
             alignBody: true,
             alignTitles: true,
-            alignHeight: 400
+            alignHeight: 400,
+            callback: function() {
+                $(".page-divider .elem-left").addClass("wow animated fadeInLeft");
+                $(".page-divider .elem-right").addClass("wow animated fadeInRight");
+            }
         });  
     }
 
     //page with intro
     if($("#intro").length){    
-        $("#intro").find("h1:first-child, #append").wrapAll('<div id="page-title" />');
-        $("#intro").appendTo("#page-title").parent().addClass("has-intro");
+        $("#intro").find("h1:first-of-type, #append").wrapAll('<div id="page-title" />');
+        $("#intro").prependTo("main#page").addClass("has-intro");
     } else {        
-        $("#page h1:first-child:not(.detach), #page #append").appendTo("#page-title").wrapAll('<div class="container" />'); 
+        $("#page h1:first-child:not(.detach), #page #append").prependTo("main#page").wrapAll('<div id="page-title"></div>'); 
     }
     //Custom Borders
-    $("img.elem-left, img.elem-right").each(function() {
-        var objClass = $(this).attr('class');    
-        $(this).wrapAll('<span class="elem-deco ' + objClass + '"/>');                    
-        $(this).removeClass();
-    });
+    // $("img.elem-left, img.elem-right").each(function() {
+    //     var objClass = $(this).attr('class');    
+    //     $(this).wrapAll('<span class="elem-deco ' + objClass + '"/>');                    
+    //     $(this).removeClass();
+    // });
 
     // //page tags
     // var pageTag = $("#page h1").data("tag"),
@@ -484,6 +531,7 @@ $(function () {
 
     //$("#page h1:first-child:not(.detach), #page #append").appendTo("#page-title").wrapAll('<div class="container" />'); 
     //$(".more-to-explore").appendTo("#contact"); 
+    //$("nav#main-nav a[href*='https://']").attr("target","_blank");
     $(".more-to-explore").find("span").addClass("h2");      
 
     // accordion + video reload
@@ -525,15 +573,15 @@ $(function () {
     // })
 
     //tntvideos defaults
-    // if($("[data-player]").length) {
-    //     $("[data-player]").tntvideos({      
-    //         playButton: '.play-btn',
-    //         closeButton: '.close-btn',
-    //         bodyPlaying: '.playing',
-    //         offset:0,
-    //         mobileWidth: 900
-    //     }); 
-    // }
+    if($("[data-player]").length) {
+        $("[data-player]").tntvideos({      
+            playButton: '.play-btn',
+            closeButton: '.close-btn',
+            bodyPlaying: '.playing',
+            offset:0,
+            mobileWidth: 900
+        }); 
+    }
 
     // var typed = new Typed('.tag-main', {
     //   strings: ["SMILE","COMFORT","HEALTH"],

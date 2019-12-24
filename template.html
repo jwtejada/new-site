@@ -5,11 +5,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta content="$var(metaDescription)$" name="Description" />		
 	<title>$var(pageTitle)$</title>
-	<link rel="canonical" href="http://www.$var(siteURL)$/$var(pageURL)$.html" />		
-	<link href="_ui.css" type="text/css" rel="stylesheet">
+	<link rel="canonical" href="http://www.$var(siteURL)$/$var(pageURL)$.html" />	
 	<link href="styles.css" type="text/css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Literata:400,700|Roboto:300,400,700&display=swap" rel="stylesheet"> 
-	<link href="https://tntwebsites.com/tnticons/css/fontello.css" type="text/css" rel="stylesheet">		
+	<link href="_ui.css" type="text/css" rel="stylesheet">	
+	<link href="https://tntwebsites.com/tnticons/css/fontello.css" type="text/css" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,600|Lato:300,400,900&display=swap" rel="stylesheet"> 
 	<!--[if lt IE 9]><script src="assets/js/html5shiv.min.js"></script><![endif]-->		
 	<link rel="apple-touch-icon" alt="Favicon 144x144" sizes="144x144" href="assets/images/apple-touch-icon-144.png"/>
 	<link rel="apple-touch-icon" alt="Favicon 114x114" sizes="114x114" href="assets/images/apple-touch-icon-114.png"/>
@@ -36,67 +36,62 @@
 				<span><i class="icon-gplus"></i> <b>Reviews</b></span>
 				<span>Leave a Google Review</span>
 			</a>
-			<a class="call" href="tel:"><i class="icon-phone"></i> <b>Call</b></a>
+			<a class="call" href="tel:13178757645"><i class="icon-phone"></i> <b>Call</b></a>
 			<a class="map" href="" target="_blank"><i class="icon-map"></i> <b>Map</b></a>
 		</div>
 		<header>
+			<div id="hd-top">
+				<nav id="main-nav">
+					<!-- [cms:buildnav start=null levels=*][level]<ul>[item]<li><a href="$pageURL$" title="$hrefTitle$">$pageName$</a></li>[/item]</ul>[/level][/cms:buildnav] -->
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">About Us</a></li>						
+						<li><a href="">Dental Implants</a></li>
+						<li><a href="">Cosmetic Dentistry</a></li>
+						<li><a href="">Occlusal Wear</a></li>
+						<li><a href="">Additional Services</a>
+							<ul><li><a href="">Cosmetic</a></li>
+							<li><a href="">Restorative</a></li>
+							<li><a href="">Preventive</a></li></ul>
+						</li>
+						<li><a href="">For Patients</a></li>
+						<li><a href="">Reviews</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 			<div id="hd-contents" class="flex-ed">				
-				<a href="index.html" class="logo"><img src="assets/images/logo.png" /><span><img src="assets/images/logo-title.png" /> <span class="tag">Formerly Today's Dental</span></span></a>				
-				<div id="hd-container">
-					<div id="hd-info" class="flex-ed">
-						<address><a href="" target="_blank"><i class="icon-location"></i> 209 W Main St, <span>Azle, TX 76020</span></a></address>					
-						<a href="tel:18174442585" class="phone"><i class="icon-phone"></i> (817) 444-2585</a>								
+				<a href="index.html" class="logo"><img src="assets/images/logo.png" /><img src="assets/images/logo-title.png" /><span class="former">Formerly Beautiful You Family Dental</span></a>				
+				<div id="hd-info">
+					<div>
+						<a href="tel:13178757645" class="phone">(317) 875-7645</a>								
+						<address><a href="" target="_blank">10485 N Michigan Rd #150, <span>Carmel, IN 46032</span></a></address>					
+					</div>	
+					<div id="hd-btns">				
+						<a href="" class="btn-app">Request an Appointment</a>
+						<div id="hd-connect" class="flex-ed">
+							<span class="social">							
+								<a href="" target="_blank" class="fb"><i class="icon-facebook"></i> </a>
+								<a href="" target="_blank" class="gp"><i class="icon-gplus"></i> </a>				
+								<a href="" target="_blank" class="ig"><i class="icon-instagramm"></i> </a>
+							</span>
+							<a href="" class="btn-pay">Pay Online</a>
+						</div>
 					</div>
-					<nav id="main-nav">
-						<!-- [cms:buildnav start=null levels=*][level]<ul>[item]<li><a href="$pageURL$" title="$hrefTitle$">$pageName$</a></li>[/item]</ul>[/level][/cms:buildnav] -->
-						<ul>
-							<li><a href="">Home</a></li>
-							<li><a href="">About Us</a></li>
-							<li><a href="">Our Services</a>
-								<ul><li><a href="">Cosmetic</a></li>
-								<li><a href="">Restorative</a></li>
-								<li><a href="">Preventive</a></li></ul>
-							</li>
-							<li><a href="">For Patients</a></li>
-							<li><a href="">Dental Insurance</a></li>
-							<li><a href="">Reviews</a></li>
-							<li><a href="">Contact</a></li>
-						</ul>
-					</nav>
 				</div>
-				<a href="" class="btn-ra">Request <small>an Appointment</small></a>
-			</div>			
-			
+			</div>						
 		</header>
 		
 		<main id="page">	
-			<div id="page-title"></div>
-			<article class="clearfix container"><!-- $section(body)$ -->
-				<div id="intro" class="flex-ed">	
-					<figure><img src="assets/images/main-img.jpg" /></figure>
-					<div>
-						<h1>Header 1</h1>
-						<h2 id="append">Header 2 with Append</h2>										
-						<div class="intro-block">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-						laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-						</div>
+			<article class="clearfix container"><!-- $section(body)$ -->			
+					<h1>Lato - Regular 14/14 #FFFFF</h1>
+					<h2 id="append">Ibarra Real Nova - Semibold 70/70 #FFFFFF</h2>				
+					<div class="clearfix">
+					<p><img src="assets/images/implants-1.jpg" class="elem-left" /></p>
+					<p>Your teeth are extremely durable and can withstand some of the strongest forces in the human body. However, they can begin to break down over time, especially if you don’t brush and floss enough in between dental visits. Physical injury can also leave them chipped, cracked, or damaged in some way. If this occurs, you should know that Dr. Saad is more than happy to make them fully functional once again, all without having to resort to distracting metal materials. If your smile is damaged or you aren’t happy with a filling from a previous dentist, give our office a call!</p>
 					</div>
-				</div>			
 				
-				<h2>Docs Landing</h2>				
-				<div id="drs-landing" class="flex-ed">
-					<a href="">
-						<figure><img src="assets/images/dr-landing-1.jpg" /></figure>
-						<span class="btn">Meet Dr. Frank Rubal</span>	
-					</a>
-					<a href="">
-						<figure><img src="assets/images/dr-landing-2.jpg" /></figure>
-						<span class="btn">Meet Dr. Jodie Rubal</span>
-					</a>
-				</div>	
-
-				<h3>Bulleted List</h3>
+				 <h3>H3 Bulleted List</h3>
 				<ul>
 					<li>Check-ups &amp; Cleanings</li>
 					<li>Dental Sealants</li>
@@ -104,115 +99,103 @@
 					<li>Sportsguards</li>
 				</ul>
 
-				<h1>Request an Appointment</h1>
-				<form action="https://tnt-adder.herokuapp.com/submit/" class="forms" method="post">				
-				<div class="inline">
-					<div><label>Name</label> <input name="Name" placeholder="John Smith" required="true" type="text" /></div>
-					<div><label>Phone Number</label> <input name="Phone" placeholder="(555)-555-5555" type="text" /></div>
-					<div><label>Email Address</label> <input name="email" placeholder="john@smith.com" required="true" type="email" /></div>
-				</div>
-				<div class="inline inline-box">
-					<div>
-						<label>Are you...</label> 
-						<span><input name="PatientType[]" value="New" type="checkbox" /> A New Patient </span>
-						<span><input name="PatientType[]" value="Existing" type="checkbox" /> An Existing Patient</span>
-					</div>				
-					<div>
-						<label>Preferred day of the week</label>
-						<span><input name="day[]" value="Monday" type="checkbox" /> Monday </span>
-						<span><input name="day[]" value="Tuesday" type="checkbox" /> Tuesday </span>
-						<span><input name="day[]" value="Wednesday" type="checkbox" /> Wednesday </span>
-						<span><input name="day[]" value="Thursday" type="checkbox" /> Thursday </span>
-						<span><input name="day[]" value="Friday" type="checkbox" /> Friday</span>
-					</div>
-					<div>
-					 	<label>Preferred method of communication</label>
-                        <span><input name="time[]" type="checkbox" required="" value="phone" /> Phone </span>
-                        <span><input name="time[]" type="checkbox" required="" value="Text" /> Text </span>
-                        <span><input name="time[]" type="checkbox" required="" value="email" /> Email </span>
-					</div>
-				</div>		
-
-				<div class="inline">
-                    <div class="">
-                         <label>What are you interested in?</label>
-                          <textarea name="Interests" aria-label="Interests" placeholder="I am interested in…"></textarea>
-                       </div>
-                    <div class="wide">
-                           <label>Do you have any questions or comments?</label>
-                          <textarea name="Questions/Comments" aria-label="Questions" placeholder="Type your questions or comments here."></textarea>
-                   </div>
-                </div>
-
-				<div class="inline">
-					<div>
-						<label>How did you hear about us?</label> 
-						<select name="discover"><option>Search Engine</option><option>Family/Friend</option><option>Promotion</option><option>Social Media</option><option>Other</option></select>
-					</div>			
-					<div><button class="btn">Submit</button></div>
-				</div>	
-				<input name="_subject" value="Appointment Request" type="hidden" /><input name="_redirect" value="thanks.html" type="hidden" />
-				</form>			
-
-				<h1>Services</h1>
 				<div class="page-services">
 					<div>
-						<p><a href=""><img src="assets/images/services-1.png" /> I Need a<br /> Dental Checkup<br /> & Cleaning</a></p>
-						<ul>
-							<li><a href="">Dental Checkups & Cleanings</a></li>
-							<li><a href="">Oral Cancer Screening</a></li>
-							<li><a href="">Fluoride Treatment</a></li>
-						</ul>
+					<p><a href="preventive-dentistry.html"><img src="assets/images/services-1.jpg" /> <strong>I Need a</strong> Checkup &amp; Cleaning</a></p>
+					<ul>
+					<li> <a href="preventive-dentistry.html#checkups">Dental Checkups &amp; Cleanings<br /> </a></li>
+					<li> <a href="preventive-dentistry.html#cancer">Oral Cancer Screenings</a></li>
+					<li> <a href="preventive-dentistry.html#flu">Fluoride Treatments</a></li>
+					<li> <a href="preventive-dentistry.html#home">At-Home Hygiene Products</a></li>
+					<li> <a href="preventive-dentistry.html#seal">Dental Sealants<br /> </a></li>
+					<li> <a href="preventive-dentistry.html#guards">Athletic Mouthguards<br /> </a></li>
+					<li> <a href="preventive-dentistry.html#childrens">Children’s Dentistry</a></li>
+					</ul>
 					</div>
 					<div>
-						<p><a href=""><img src="assets/images/services-1.png" /> Service 2</a></p>
-						<ul>
-							<li><a href="">Service 2</a></li>
-							<li><a href="">Service 3</a></li>
-							<li><a href="">Service 4</a></li>
-						</ul>
+					<p><a href="emergency-dentistry.html"><img src="assets/images/services-2.jpg" /> <strong>I am</strong> In Pain &amp; Need Help</a></p>
+					<ul>
+					<li> <a href="emergency-dentistry.html#handle">Handling Dental Emergencies<br /> </a></li>
+					<li> <a href="emergency-dentistry.html#prevent">Preventing Dental Emergencies<br /> </a></li>
+					<li> <a href="emergency-dentistry.html#treat">Treating Dental Emergencies<br /> </a></li>
+					<li> <a href="root-canal-therapy.html">Root Canals</a></li>
+					<li> <a href="tooth-extractions.html">Tooth Extractions</a></li>
+					<li> <a href="wisdom-teeth-removal.html">Wisdom Tooth Extractions</a></li>
+					</ul>
 					</div>
 					<div>
-						<p><a href=""><img src="assets/images/services-1.png" /> Service 3</a></p>
-						<ul>
-							<li><a href="">Service 2</a></li>
-							<li><a href="">Service 3</a></li>
-							<li><a href="">Service 4</a></li>
-						</ul>
+					<p><a href="restorative-dentistry.html"><img src="assets/images/services-3.jpg" /> <strong>I Have a</strong> Cavity or Broken Tooth</a></p>
+					<ul>
+					<li> <a href="restorative-dentistry.html#fillings">Tooth-Colored Fillings</a></li>
+					<li> <a href="restorative-dentistry.html#crowns">Dental Crowns</a></li>
+					<li> <a href="restorative-dentistry.html#full">Full Mouth Restorations</a></li>
+					</ul>
 					</div>
-				</div>
-
-				<h2>Office Tour</h2>				
-				<div id="controls" class="tour-controls flex-ed"></div>
-				<div class="tour slick-slider">
-					<div><img src="assets/_images/officetour-1.jpg" /></div>
-					<div><img src="assets/_images/officetour-2.jpg" /></div>
-					<div><img src="assets/_images/officetour-3.jpg" /></div>
-				</div>
+					<div>
+					<p><a href="gum-disease-treatment.html"><img src="assets/images/services-1.jpg" /> <strong>I am</strong> Concerned About Bleeding Gums</a></p>
+					<ul>
+					<li> <a href="gum-disease-treatment.html#scaling">Scaling &amp; Root Planing<br /> </a></li>
+					<li> <a href="gum-disease-treatment.html#anti">Arestin Antibiotic Therapy<br /> </a></li>
+					</ul>
+					</div>
+					<div>
+					<p><a href="missing-teeth.html"><img src="assets/images/services-2.jpg" /> <strong>I am</strong> Missing One or More Teeth</a></p>
+					<ul>
+					<li> <a href="missing-teeth.html#bridges">Dental Bridges</a></li>
+					<li> <a href="missing-teeth.html#dentures">Dentures &amp; Partials</a></li>
+					<li> <a href="missing-teeth.html#implants">Dental Implants</a></li>
+					</ul>
+					</div>
+					<div>
+					<p><a href="sedation-dentistry.html"><img src="assets/images/services-3.jpg" /> <strong>I am</strong> Scared of the Dentist</a></p>
+					<ul>
+					<li> <a href="sedation-dentistry.html#oral">Oral Conscious Sedation</a></li>
+					<li> <a href="sedation-dentistry.html#nitrous">Nitrous Oxide Sedation</a></li>
+					</ul>
+					</div>
+				</div>			
 				
-				<h1>Frequently Asked Questions</h1>
-				<div class="accordion">
-				<h3>
-				How often should I visit the dentist?</h3>
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quas fuga commodi beatae minima maxime ex odio magni quibusdam quisquam dignissimos nihil dolorum, a sapiente sunt ea excepturi alias deserunt.</p>
-				<h3>
-				What is periodontal disease?</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque pariatur placeat repudiandae fuga officiis distinctio dolorum amet, magnam possimus eius tempora et. Quasi dolore commodi similique non. Porro sed, maiores.</p>
-				<h3>
-				Can you help if I have a dental emergency?</h3>
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est asperiores magni id obcaecati eveniet eos voluptates ratione a quas vitae eum, dignissimos et earum, quos laboriosam rem, neque debitis molestias.</p>
+				<!--<h2>Frequently Asked Questions</h2>
+				<div class="grad">
+					<div class="accordion">
+						<h3>
+						How often should I visit the dentist?</h3>
+						<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quas fuga commodi beatae minima maxime ex odio magni quibusdam quisquam dignissimos nihil dolorum, a sapiente sunt ea excepturi alias deserunt.</p>
+						<h3>
+						What is periodontal disease?</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque pariatur placeat repudiandae fuga officiis distinctio dolorum amet, magnam possimus eius tempora et. Quasi dolore commodi similique non. Porro sed, maiores.</p>
+						<h3>
+						Can you help if I have a dental emergency?</h3>
+						<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est asperiores magni id obcaecati eveniet eos voluptates ratione a quas vitae eum, dignissimos et earum, quos laboriosam rem, neque debitis molestias.</p>
+					</div> 
 				</div>
 
-				<h1>PAGE DIVIDER + WHY</h1>
+				<h2>Special</h2>				
+				<div id="special-form">		
+					<img src="assets/images/special-1.jpg" />			
+					<form action="https://tnt-adder.herokuapp.com/submit/" class="forms" method="post">					
+						<div class="desc">
+							<span class="price">Free</span>
+							<span class="title">Initial Comprehensive Exam</span>
+						</div>
+						<input name="name" placeholder="Name" required="true" type="text" />									
+						<input name="email" placeholder="Email" required="true" type="email" />						
+						<input name="Phone" placeholder="Phone" type="text" />
+						<button class="btn">Schedule your visit</button>
+					
+						<input name="_subject" value="Special" type="hidden" />
+						<input name="_redirect" value="thanks.html" type="hidden" />
+					</form>	
+				</div>	 -->		
 				
 				<div class="why">
-				<h2>Why Choose Rubal Dentistry for Dental Implants?</h2>
+				<h2>Why Choose Pace Dental for Restorative Dentistry?</h2>
 				<ul>
-					<li>Dentists with More Than 20 Years of Experience Each</li>
-					<li>Low-Interest Financing Available</li>
-					<li>Implant Placement Performed In-Office</li>
+					<li>Dentist with Extensive Oral Surgery Experience </li>
+					<li>Entire Procedure Provided Under One Roof </li>
+					<li>Strong Relationships That Lead to Better Care & Better Results</li>
 				</ul>
 				</div>
 
@@ -221,8 +204,7 @@
 						<a name="veneers"></a></p>					
 					<h2>
 						Porcelain Veneers</h2>
-					<p>
-						<img class="elem-left" src="assets/_images/preventive-2.jpg" /></p>	
+					<p><img src="assets/images/implants-2.jpg" class="elem-right" /></p>	
 					<p>
 						If you have chipped or cracked teeth, we&rsquo;ll be happy to cover them up with porcelain veneers! These thin shells of ceramic are tooth-shaped and are used to conceal damaged teeth and create the appearance of a beautiful, unaltered smile. This cosmetic dentistry solution.</p>		
 					<p>
@@ -230,14 +212,58 @@
 								
 					<h2>
 						Metal-Free Restorations</h2>
-					<p>
-						<img class="elem-right" src="assets/_images/preventive-3.jpg" /></p>	
+					<p><img src="assets/images/implants-3.jpg" class="elem-left" /></p>
 					<p>
 						While most patients think of crowns, bridges, and other more advanced restoration solutions as purely restorative dentistry services, we can also use these restorations to improve cosmetic flaws like severe, deep-set staining, malformation, or not uniform tooth size. Our team uses the strong, tooth-colored Bruxir zirconia material to create dental crowns for many cosmetic and restorative treatments. These metal-free restorations combine the benefits of strong gold crowns and natural looking porcelain crowns. They have strength almost equal to gold crowns and a natural appearance that is comparable to porcelain.</p>
 					<p>
 						Additionally, Bruxir zirconia does not create excessive wear when meeting opposing teeth, those on the opposite arch. In addition to the improved cosmetic appearance, we also recommend Bruxir restorations for patients who have allergies or sensitivities to metal. These metal-free restorations offer safe, effective, long-lasting repair for these patients. From concealing and correcting cosmetic flaws to advanced dental restoration, Bruxir crowns allow our team to provide the best possible care to every patient we treat.</p>								
-				</div>							
+					<h2>
+						Metal-Free Restorations</h2>
+					<p><img src="assets/images/implants-3.jpg" class="elem-right" /></p>
+					<p>
+						While most patients think of crowns, bridges, and other more advanced restoration solutions as purely restorative dentistry services, we can also use these restorations to improve cosmetic flaws like severe, deep-set staining, malformation, or not uniform tooth size. Our team uses the strong, tooth-colored Bruxir zirconia material to create dental crowns for many cosmetic and restorative treatments. These metal-free restorations combine the benefits of strong gold crowns and natural looking porcelain crowns. They have strength almost equal to gold crowns and a natural appearance that is comparable to porcelain.</p>
+					<div class="block">
+					<p><img src="assets/images/implants-4.jpg" class="elem-left" /></p>
+					<h3>Missing Single Tooth</h3>
+					<p>Rather than filing down and sacrificing two teeth to place a bridge that restores one tooth, Dr. Springhetti can use a single implant root to hold a porcelain crown. This crown won’t lean on the neighboring teeth for support or require them to be altered at all, and it will be designed to blend seamlessly with the rest of the smile. </p>
+					</div>
+					<div class="block">
+					<p><img src="assets/images/implants-5.jpg" class="elem-left" /></p>
+					<h3>Missing Multiple Teeth</h3>
+					<p>Several teeth can be brought back at once using just a small number of implants that attach a bridge or partial denture directly to the jawbone. These implant-retained prosthetics are much more stable than their removable counterparts, and they last longer as well. </p>
+					</div>
+
+				</div>
+
+				<!-- <h2>Community</h2>				
+				<div id="controls" class="community-controls flex-ed"></div>
+				<div class="slick-giving slick-slider">
+					<div><img src="assets/images/community-1.jpg" /></div>
+					<div><img src="assets/images/community-1.jpg" /></div>
+					<div><img src="assets/images/community-1.jpg" /></div>					
+				</div> 
+
+				<h2>Office Tour</h2>				
+				<div id="controls" class="tour-controls flex-ed"></div>
+				<div class="slick-tour slick-slider">
+					<div><img src="assets/images/office-1.jpg" /></div>
+					<div><img src="assets/images/office-1.jpg" /></div>
+					<div><img src="assets/images/office-1.jpg" /></div>	
+				</div> -->
 				
+				<h2>Smile Gallery</h2>				
+				<div id="controls" class="gallery-controls flex-ed"></div>
+				<div class="slick-gallery slick-slider">
+					<div class="case">
+						<span class="before"><img src="assets/images/case-1b.jpg" /></span>
+						<span class="after"><img src="assets/images/case-1a.jpg" /></span>
+					</div>
+					<div class="case">
+						<span class="before"><img src="assets/images/case-1b.jpg" /></span>
+						<span class="after"><img src="assets/images/case-1a.jpg" /></span>
+					</div>				
+				</div>
+
 				<div class="more-to-explore">			
 					<span>More to Explore</span>
 					<p>
@@ -248,57 +274,59 @@
 					<a href="#" class="btn-alt">Button 5</a>	
 					</p>
 				</div>
-			</article>
+			</article>			
 		</main>		
 
 		<!-- $section(above-footer)$ -->
-		<div id="contact">	
-			<span class="h2">Have Questions? Get Answers.</span>				
-			<form action="https://tnt-adder.herokuapp.com/submit/" class="forms" method="post">
-				<div class="stretch-ed">
-					<div class="inline stretch-ed">
-					<input name="Name" placeholder="Name" required="true" type="text" />			
-					<input name="Phone" placeholder="Phone Number" type="text" />
-					<input name="email" placeholder="Email Address" required="true" type="email" />
+		<footer>
+			<div id="fo-container" class="flex-ed">		
+				<div id="fo-contents"> 				
+					<div id="fo-info">
+						<span>
+							<a href="tel:13178757645" class="phone">(317) 875-7645</a>										
+							<address><a href="" target="_blank">10485 N Michigan Rd #150, <span>Carmel, IN 46032</span></a></address>										
+						</span>
+						<span class="hours">
+							<span class="fo-title">Office Hours</span>					
+							<b>Monday</b> <em>Closed</em><br />
+							<b>Tuesday</b> 11:00 am - 7:00 pm<br />
+							<b>Wednesday</b> By Appointment Only<br />
+							<b>Thursday</b> 9:00 am - 7:00 pm
+							<b>Friday</b> 8:00 am - 2:00 pm
+						</span>						
+					</div>
+					<form action="https://tnt-adder.herokuapp.com/submit/" class="forms" method="post">
+						<span class="fo-title">Ask Us a Question</span>
+						<input name="name" placeholder="Name" required="true" type="text" />							
+						<input name="Phone" placeholder="Phone Number" type="text" />			
+						<input name="email" placeholder="Email Address" required="true" type="email" />					
+						<textarea name="question" class="fields" placeholder="Questions/Comments"></textarea>	
+						<button class="btn">Submit Your questions</button>						
+						<input name="_subject" value="Ask the Doctor" type="hidden" />
+						<input name="_redirect" value="thanks.html" type="hidden" />
+					</form>
 				</div>
-				<textarea name="question" class="fields" placeholder="Questions/Comments"></textarea>	
-				</div>
-				<button class="btn">Submit</button>
-				
-				<input name="_subject" value="Ask the Doctor" type="hidden" />
-				<input name="_redirect" value="thanks.html" type="hidden" />
-				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="_check" tabindex="-1" value=""></div>
-			</form>
-		</div>
-		<footer>			
-			<div id="fo-contents" class="flex-ed"> 
-				<div id="fo-info">
-					<a href="" class="logo"><img src="assets/images/logo.png" /><img src="assets/images/logo-title.png" /></a>
-
-					<a href="tel:" class="phone">(817) 444-2585</a>										
-					<address><a href="" target="_blank">209 W Main St, <span>Azle, TX 76020</span></a></address>															
-				</div>
-				<div id="fo-social">
-					<span class="hours">
-						<span class="fo-title">Office Hours</span>					
-						<b>Monday</b> 7:30 am - 5:00 pm<br />
-						<b>Tuesday</b> 7:30 am - 5:00 pm<br />
-						<b>Wednesday</b> 7:30 am - 5:00 pm<br />
-						<b>Thursday</b> 7:30 am - 5:00 pm<br />
-						<b>Friday</b> 8:00 am - 1:00 pm
-					</span>
-					<span class="social">
-						<span class="fo-title">Connect With Us</span>
-						<a href="" target="_blank" class="fb"><i class="icon-facebook"></i></a>
-						<a href="" target="_blank" class="gp"><i class="icon-gplus"></i></a>									
-						<a href="" target="_blank" class="yt"><i class="icon-youtube-play"></i></a>			
-						<a href="" target="_blank" class="tw"><i class="icon-twitter"></i></a>				
-						<a href="" target="_blank" class="yp"><i class="icon-yelp"></i></a>	
-					</span>				
-				</div>
-			</div>			
-			<div id="copy">&copy;2019 Rubal Dentistry | <a href="sitemap.html">Sitemap</a> | <a href="policy.html">Privacy Policy</a>  <span><span>|</span> Site designed and maintained by <a href="https://www.tntdental.com/" target="_blank" title="Dental Website Design">TNT Dental</a></span>							
+				<div id="fo-map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.1659962160015!2d-86.23670028461858!3d39.93767647942368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814aac087e3f30d%3A0x2c70c9de06c48e62!2sBeautiful%20You%20Family%20Dental!5e0!3m2!1sen!2sus!4v1577130123061!5m2!1sen!2sus" width="100%" height="700" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>														 
 			</div>
+			<div id="copy">
+				<div class="flex-ed">
+					<a href="index.html" class="logo"><img src="assets/images/logo.png" /><img src="assets/images/logo-title.png" /></a>
+					<div id="fo-connect">
+						<span class="social">
+							<a href="" target="_blank" class="fb"><i class="icon-facebook"></i> </a>
+							<a href="" target="_blank" class="gp"><i class="icon-gplus"></i> </a>				
+							<a href="" target="_blank" class="yp"><i class="icon-yelp"></i> </a>				
+							<a href="" target="_blank" class="tw"><i class="icon-twitter"></i> </a>				
+							<a href="" target="_blank" class="ig"><i class="icon-instagramm"></i> </a>
+						</span>	
+						<div>			
+						&copy;2019 Springhetti Dentistry  | <a href="sitemap.html">Sitemap</a> | <a href="policy.html">Privacy Policy</a>  <span><span>|</span> Site designed and maintained by <a href="https://www.tntdental.com/" target="_blank" title="Dental Website Design">TNT Dental</a></span>	
+						</div>	
+					</div>
+				</div>
+			</div>	
 		</footer>
 	
 	<script src="assets/js/foundation.js"></script>	
