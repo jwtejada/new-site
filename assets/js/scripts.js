@@ -472,6 +472,10 @@ $(function () {
     //     }
     // }
 
+    $(".forms input[name='contact']:").on("click",function() {
+       console.log("hello");
+    });
+
     //RESPONSIVE
     $('header #main-nav').meanmenu({
         meanMenuContainer: '#hd-contents',
