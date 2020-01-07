@@ -79,44 +79,44 @@ $(function () {
         }]
     }); 
 
-    $(".slick-welcome").slick({
-        dots:true,
-        arrows:true,
-        slidesToScroll:1,
-        slidesToShow:1,
-        appendDots:".welcome-controls",          
-        prevArrow:'<a href="#" id="prev"><i class="icon-angle-left"></i></a>',
-        nextArrow:'<a href="#" id="next"><i class="icon-angle-right"></i></a>',                  
-        customPaging:function(slider,index) {         
-            return '<span></span>';
-        },
-        responsive: 
-        [{
-            breakpoint: 1185,
-            settings: {  
-                appendArrows:".welcome-controls"                               
-            } 
-        }]
-    }); 
-    $(".slick-team").slick({
-        dots:true,
-        arrows:true,
-        slidesToScroll:1,
-        slidesToShow:1,
-        appendDots:".team-controls",          
-        prevArrow:'<a href="#" id="prev"><i class="icon-angle-left"></i></a>',
-        nextArrow:'<a href="#" id="next"><i class="icon-angle-right"></i></a>',                  
-        customPaging:function(slider,index) {         
-            return '<span></span>';
-        },
-        responsive: 
-        [{
-            breakpoint: 1185,
-            settings: {  
-                appendArrows:".team-controls"                               
-            } 
-        }]
-    }); 
+    // $(".slick-welcome").slick({
+    //     dots:true,
+    //     arrows:true,
+    //     slidesToScroll:1,
+    //     slidesToShow:1,
+    //     appendDots:".welcome-controls",          
+    //     prevArrow:'<a href="#" id="prev"><i class="icon-angle-left"></i></a>',
+    //     nextArrow:'<a href="#" id="next"><i class="icon-angle-right"></i></a>',                  
+    //     customPaging:function(slider,index) {         
+    //         return '<span></span>';
+    //     },
+    //     responsive: 
+    //     [{
+    //         breakpoint: 1185,
+    //         settings: {  
+    //             appendArrows:".welcome-controls"                               
+    //         } 
+    //     }]
+    // }); 
+    // $(".slick-team").slick({
+    //     dots:true,
+    //     arrows:true,
+    //     slidesToScroll:1,
+    //     slidesToShow:1,
+    //     appendDots:".team-controls",          
+    //     prevArrow:'<a href="#" id="prev"><i class="icon-angle-left"></i></a>',
+    //     nextArrow:'<a href="#" id="next"><i class="icon-angle-right"></i></a>',                  
+    //     customPaging:function(slider,index) {         
+    //         return '<span></span>';
+    //     },
+    //     responsive: 
+    //     [{
+    //         breakpoint: 1185,
+    //         settings: {  
+    //             appendArrows:".team-controls"                               
+    //         } 
+    //     }]
+    // }); 
 
     // $(".slick-letters").slick({
     //     dots:true,
@@ -188,28 +188,30 @@ $(function () {
        }
     });   
 
-    $(".slick-reviews").slick({   
-        dots:true,
-        arrows:true, 
-        fade:true,
-        autoplay:true,
-        autoplaySpeed:5000,
-        appendDots:".reviews-controls",
-        prevArrow:'<a href="#" id="prev"><i class="icon-angle-left"></i></a>',
-        nextArrow:'<a href="#" id="next"><i class="icon-angle-right"></i></a>',                      
-        customPaging:function(slider,index) {
-            //var social = $(slider.$slides[index]).find("[data-source]").data('source');
-            //return '<span class="'+ social +'"></span>';
-            return '<span></span>';
-        },
-        responsive: [
-        {
-          breakpoint: 1023,
-          settings: {
-            appendArrows:".reviews-controls"
-          }
-        }]
-    }); 
+    if(theWindow.width() < 1023) { 
+        $(".slick-reviews").slick({   
+            dots:true,
+            arrows:true, 
+            fade:true,
+            autoplay:true,
+            autoplaySpeed:5000,
+            appendDots:".reviews-controls",
+            prevArrow:'<a href="#" id="prev"><i class="icon-angle-left"></i></a>',
+            nextArrow:'<a href="#" id="next"><i class="icon-angle-right"></i></a>',                      
+            customPaging:function(slider,index) {
+                //var social = $(slider.$slides[index]).find("[data-source]").data('source');
+                //return '<span class="'+ social +'"></span>';
+                return '<span></span>';
+            },
+            responsive: [
+            {
+              breakpoint: 1023,
+              settings: {
+                appendArrows:".reviews-controls"
+              }
+            }]
+        }); 
+    }
 
     //     responsive: 
     //     [{
@@ -472,9 +474,9 @@ $(function () {
     //     }
     // }
 
-    $(".forms input[name='contact']:").on("click",function() {
+    /*$(".forms input[name='contact']:").on("click",function() {
        console.log("hello");
-    });
+    });*/
 
     //RESPONSIVE
     $('header #main-nav').meanmenu({
@@ -514,6 +516,7 @@ $(function () {
     } else {        
         $("#page h1:first-child:not(.detach), #page #append").prependTo("main#page").wrapAll('<div id="page-title"></div>'); 
     }
+    
     //Custom Borders
     // $("img.elem-left, img.elem-right").each(function() {
     //     var objClass = $(this).attr('class');    
@@ -559,15 +562,14 @@ $(function () {
     });
 
     /// Randomized Banner Background
-    // var selectBG = Math.floor(Math.random() * 12) + 1;
-    // if (!$("body").hasClass("page_index")) {
-    //     $('#page-title.banner-title').css({
-    //         'background-image': 'url(assets/images/banner-' + selectBG + '.jpg)',
-    //         'background-repeat': 'no-repeat',
-    //         'background-position': 'right top',
-    //         'background-size': 'cover'
-    //     })
-    // }
+    var selectBG = Math.floor(Math.random() * 0) + 1;
+    if (!$("body").hasClass("page_index")) {
+        $('#page-banner').css({
+            'background-image': 'url(assets/images/banner-' + selectBG + '.jpg)',
+            'background-repeat': 'no-repeat',
+            'background-position': 'center top'
+        })
+    }
 
     // $(".cards a").hover(function() {
     //     console.log("hover");
